@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.header`
-    min-width: 260px;
+    min-width: 250px;
     height: 100vh;
     background-color: #01001F;
     display: flex;
@@ -13,6 +13,7 @@ export const Container = styled.header`
   div{ 
     display: flex;
     flex-direction: column;
+    align-items: center;
   img{
       width: 160px;
       height: 160px;
@@ -46,10 +47,11 @@ export const Nav = styled.nav`
 `;
 export const Links = styled(Link)`
    text-decoration:none;
+   font-weight: 500;
    color: #FFFFFF;
-   transition: opacity 0.2s;
+   transition:  color 0.2s;
     &:hover{
-    opacity: 0.4;
+    color: #90235C;
   }
 `;
 export const Footer = styled.footer`
@@ -60,6 +62,7 @@ export const Footer = styled.footer`
      transition: opacity 0.2s;
     &:hover{
     opacity: 0.4;
+    
   }
    }
 `;

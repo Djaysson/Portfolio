@@ -6,15 +6,6 @@ export const Container = styled.div`
   height:100vh;
   display: flex;
   flex-direction: column;
-
-  header{
-      text-align: right;
-      margin: 10px;
-
-      img{
-          max-width: 120px;
-      }
-  }
 `;
 export const Section = styled.section`
 
@@ -26,15 +17,14 @@ export const Section = styled.section`
 
   h1{
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 500;
   }
   strong{
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 700;
   }
 `;
 export const Button = styled(Link)`
-  text-decoration: none;
   margin-top: 20px;
   strong{
      border: 3px solid #90235C;

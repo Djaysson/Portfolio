@@ -12,16 +12,15 @@ export default createGlobalStyle`
       box-sizing: border-box;
   }
   body{
-      background: #01001F url(${background}) no-repeat  ;
+      background: #01001F url(${background}) no-repeat ;
       background-size:100vw 100vh;
       -webkit-font-smoothing: antialiased;
   }
   body,input, button{
-      font: 14px Roboto,sans-serif;
+      font: 14px Poppins,sans-serif;
       color: #FFF;
   }
   #root {
-      width: 100vw;
       height: 100vh;
       display: flex;
       flex-direction: row;
@@ -29,6 +28,10 @@ export default createGlobalStyle`
   }
   button{
       cursor: pointer;
+  }
+  a{
+     text-decoration: none;
+     color: #FFF;
   }
  
  
