@@ -16,7 +16,7 @@ export default createGlobalStyle`
       background-size:100vw 100vh;
       -webkit-font-smoothing: antialiased;
   }
-  body,input, button{
+  body,input, button,label,textarea{
       font: 14px Poppins,sans-serif;
       color: #FFF;
   }

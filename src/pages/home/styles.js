@@ -35,7 +35,7 @@ export const Button = styled(Link)`
       margin: 10px;
       transition: border 0.2s;
     &:hover{
-      border: 5px solid #90235C;
+      border: 4px solid #90235C;
   }
   }
 `;

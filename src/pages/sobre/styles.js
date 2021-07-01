@@ -37,7 +37,7 @@ export const Section = styled.section`
   flex-direction: row;
   margin-top: 160px;
   animation: fadeIn; 
-  animation-duration: 2s; 
+  animation-duration: 1s; 
  
  div{
     flex-direction: column;
@@ -96,9 +96,10 @@ justify-content: center;
       font-size: 20px;
       padding: 5px;
       margin: 5px;
-      transition: border 0.2s;
+      transition:width border 0.2s;
     &:hover{
-      border: 5px solid #90235C;
+      border: 4px solid #90235C;
+      width: 26vw;
   }
   }
 `;

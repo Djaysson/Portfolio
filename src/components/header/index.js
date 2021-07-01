@@ -23,19 +23,19 @@ function Header() {
             <Footer>
                 <span>
 
-                    <a href="https://www.linkedin.com/in/djaysonrodrigues" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/djaysonrodrigues" target="blank" rel="noopener noreferrer">
                         <FaLinkedin size={30} color="#FFF" />
                     </a>
                 </span>
                 <span>
-                    <a href="https://github.com/Djaysson" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Djaysson" target="blank" rel="noopener noreferrer">
                         <FaGithubSquare size={30} color="#FFF" />
 
                     </a>
 
                 </span>
                 <span>
-                    <a href="https://www.youtube.com/channel/UCAkanB0GDpy5UfRQnU2zbBg" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/channel/UCAkanB0GDpy5UfRQnU2zbBg" target="blank" rel="noopener noreferrer">
                         <FaYoutubeSquare size={30} color="#FFF" />
 
                     </a>

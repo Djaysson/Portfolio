@@ -49,8 +49,11 @@ export const Links = styled(Link)`
    text-decoration:none;
    font-weight: 500;
    color: #FFFFFF;
-   transition:  color 0.2s;
+   transition: opacity color 0.2s;
     &:hover{
+      opacity: 0.4;
+  }
+    &:focus{
     color: #90235C;
   }
 `;
