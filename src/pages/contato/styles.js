@@ -3,9 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
+  animation: fadeIn; 
+  animation-duration: 1s; 
 `;
 export const Title = styled.header`
-   margin-top: -70px;
+   margin-top: -100px;
   display: flex;
   justify-content: center;
 strong{
@@ -33,8 +35,6 @@ export const Section = styled.section`
   justify-content: space-between;
   margin-top: 150px;
   padding: 20px;
-  animation: fadeIn; 
-  animation-duration: 1s; 
   
 `;
 export const ContainerContato = styled.div`

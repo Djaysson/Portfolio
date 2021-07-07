@@ -22,7 +22,7 @@ function Contato() {
             <Section>
                 <ContainerContato>
                     <div>
-                        <h1>Contato altenativa</h1>
+                        <h1>Contato alternativo</h1>
                         <ul>
                             <li>
 

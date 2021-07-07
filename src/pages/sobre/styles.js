@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
  width: 100vw;
  height: 100vh;
  display: flex;
  flex-direction:column;
+ animation: fadeIn; 
+  animation-duration: 1s; 
 `;
 export const Title = styled.header`
-  margin-top: -70px;
+ margin-top: -100px;
   display: flex;
   justify-content: center;
 strong{
@@ -36,8 +37,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: row;
   margin-top: 160px;
-  animation: fadeIn; 
-  animation-duration: 1s; 
+  
  
  div{
     flex-direction: column;
@@ -56,7 +56,7 @@ export const Section = styled.section`
       font-weight: 500;
     }
     strong{
-      color: #90235C;
+      color: #C81D76;
     }
  }
 `;
@@ -93,7 +93,8 @@ justify-content: center;
      border: 3px solid #90235C;
       border-radius: 15px;
       color: #FFFFFF;
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: 500;
       padding: 5px;
       margin: 5px;
       transition:width border 0.2s;

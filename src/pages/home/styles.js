@@ -6,6 +6,8 @@ export const Container = styled.div`
   height:100vh;
   display: flex;
   flex-direction: column;
+  animation: fadeIn; 
+  animation-duration: 2s; 
 `;
 export const Section = styled.section`
 
@@ -27,10 +29,12 @@ export const Section = styled.section`
 export const Button = styled(Link)`
   margin-top: 20px;
   strong{
-     border: 3px solid #90235C;
+     border: 2px solid #90235C;
+     background-color: #01001F;
       border-radius: 15px;
       color: #FFFFFF;
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: 500;
       padding: 10px;
       margin: 10px;
       transition: border 0.2s;
