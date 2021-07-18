@@ -34,7 +34,7 @@ function Resumo() {
                     <div>
                         <span>2018 - 2020</span>
                         <p>Análise e Desenvolvimento de Sistemas</p>
-                        <a href="http://" target="blank">Universidade Estácio <GiDiploma size={25} color="#90235C" /></a>
+                        <a href="http://" target="blank">Universidade  <GiDiploma size={25} color="#90235C" /></a>
                     </div>
                     <div>
                         <span>2018 - 2020</span>
@@ -140,7 +140,7 @@ function Resumo() {
                     </ul>
                 </div>
             </Footer>
-            <Button href="https://drive.google.com/file/d/1BlQascd2UED4FeVPEJk88prpn4N84QpR/view?usp=sharing" target="blank" rel="noopener noreferrer">
+            <Button href="https://drive.google.com/file/d/1BlQascd2UED4FeVPEJk88prpn4N84QpR/view?usp=sharing" target="_blank">
                 <strong>📋 Currículo</strong>
             </Button>
         </Container>

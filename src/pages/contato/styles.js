@@ -172,10 +172,12 @@ export const Button = styled.input`
   border-radius: 10px;
   font-weight: 500;
   background: #01001F;
-  transition:  height border 0.2s;
+  transition:  transform 1s;
     &:hover{
-      border: 4px solid #90235C;
-      height: 7vh;
-  }
-
+      border: 3px solid #90235C;
+      -ms-transform: scale(1.1); 
+      -webkit-transform: scale(1.1); 
+      transform: scale(1.1);
+    }
+   
 `;

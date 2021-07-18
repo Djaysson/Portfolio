@@ -87,20 +87,26 @@ export const Button = styled.a`
 display:  flex;
 align-items: center;
 justify-content: center;
+transition: transform 1s;
+
   strong{
      width: 25vw;
      text-align: center;
-     border: 3px solid #90235C;
+     border: 2px solid #90235C;
       border-radius: 15px;
       color: #FFFFFF;
       font-size: 18px;
       font-weight: 500;
       padding: 5px;
       margin: 5px;
-      transition:width border 0.2s;
+     
     &:hover{
-      border: 4px solid #90235C;
-      width: 26vw;
+      border: 3px solid #90235C;
+    }
   }
-  }
+  &:hover{
+      -ms-transform: scale(1.1); 
+      -webkit-transform: scale(1.1); 
+      transform: scale(1.1);
+    }
 `;

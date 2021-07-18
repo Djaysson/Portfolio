@@ -54,10 +54,6 @@ export const Section = styled.section`
     border-radius: 5px;
     width: 22vw;
     height: auto;
-    transition: border 0.2s;
-    &:hover{
-      border: 3px solid #90235C;
-    }
       span{
        background-color: #90235C;
        text-align: center;
@@ -66,18 +62,21 @@ export const Section = styled.section`
       p{
         font-size: 16px;
         font-weight: 700;
-        padding-left: 2px;
+        padding-left: 15px;
       }
       a{
         font-size: 14px;
        font-weight: 500; 
-       color: #C81D76;  
-       padding-left: 2px;
-       transition: opacity 0.2s;
-          &:hover{
-          opacity: 0.7;
-          
-        }
+       color: #FFF;  
+       padding-left: 15px;
+       transition: transform 1s;
+
+       &:hover{
+        color: #C81D76;
+        -ms-transform: scale(1.1); 
+        -webkit-transform: scale(1.1); 
+        transform: scale(1.1);
+    }
       }
     
     }
@@ -177,8 +176,7 @@ margin-top: 20px;
       margin: 4px;
       transition:width border 0.2s;
     &:hover{
-      border: 4px solid #90235C;
-      width: 13vw;
-  }
+      border: 3px solid #90235C;      
+    }
   }
 `;

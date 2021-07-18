@@ -28,6 +28,7 @@ export const Section = styled.section`
 `;
 export const Button = styled(Link)`
   margin-top: 20px;
+  transition: transform 1s;
   strong{
      border: 2px solid #90235C;
      background-color: #01001F;
@@ -37,10 +38,14 @@ export const Button = styled(Link)`
       font-weight: 500;
       padding: 10px;
       margin: 10px;
-      transition: border 0.2s;
     &:hover{
-      border: 4px solid #90235C;
+      border: 3px solid #90235C;
   }
   }
+  &:hover{
+      -ms-transform: scale(1.1); 
+        -webkit-transform: scale(1.1); 
+        transform: scale(1.1);
+    }
 `;
 
