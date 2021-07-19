@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithubSquare, FaYoutubeSquare } from 'react-icons/fa'
 import ImgPerfil from '../../assets/images/perfil.png';
+import Logoimg from '../../assets/images/logo.png';
 import { Container, Nav, Links, Footer } from './styles';
 
 
@@ -21,27 +22,26 @@ function Header() {
                 </ul>
             </Nav>
             <Footer>
-                <span>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/djaysonrodrigues" target="blank" rel="noopener noreferrer">
+                            <FaLinkedin size={30} color="#FFF" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Djaysson" target="blank" rel="noopener noreferrer">
+                            <FaGithubSquare size={30} color="#FFF" />
+                        </a>
 
-                    <a href="https://www.linkedin.com/in/djaysonrodrigues" target="blank" rel="noopener noreferrer">
-                        <FaLinkedin size={30} color="#FFF" />
-                    </a>
-                </span>
-                <span>
-                    <a href="https://github.com/Djaysson" target="blank" rel="noopener noreferrer">
-                        <FaGithubSquare size={30} color="#FFF" />
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCAkanB0GDpy5UfRQnU2zbBg" target="blank" rel="noopener noreferrer">
+                            <FaYoutubeSquare size={30} color="#FFF" />
+                        </a>
 
-                    </a>
-
-                </span>
-                <span>
-                    <a href="https://www.youtube.com/channel/UCAkanB0GDpy5UfRQnU2zbBg" target="blank" rel="noopener noreferrer">
-                        <FaYoutubeSquare size={30} color="#FFF" />
-
-                    </a>
-
-                </span>
-
+                    </li>
+                </ul>
+                <p>Feito por Djayson Rodrigues <img src={Logoimg} alt="logo" /></p>
             </Footer>
         </Container>
     );

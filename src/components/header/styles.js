@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.header`
-    min-width: 250px;
+    min-width: 260px;
     height: 100vh;
     background-color: #01001F;
+    box-shadow:0 0 0.5em #90235C;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +28,6 @@ export const Container = styled.header`
   }
 }
 `;
-
 export const Nav = styled.nav`
     display: flex;
     flex-direction: column;
@@ -58,14 +58,28 @@ export const Links = styled(Link)`
   }
 `;
 export const Footer = styled.footer`
-   padding-bottom: 10px;
-   color: #FFFFFF;
-   span{
-     padding: 10px;
-     transition: opacity 0.2s;
-    &:hover{
-    opacity: 0.4;
-    
-  }
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+   ul{
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     margin: auto;
+   }
+   li{
+     padding-right: 10px;
+     margin-bottom: 10px;
+     transition: opacity color 0.2s;
+     &:hover{
+      opacity: 0.4;
+      }
+    }
+   p{
+     font-size: 13px;
+     padding-bottom: 10px;
+     img{
+       width: 25px;
+     }
    }
 `;

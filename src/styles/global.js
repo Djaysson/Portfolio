@@ -12,8 +12,9 @@ export default createGlobalStyle`
       box-sizing: border-box;
   }
   body{
-      background: #01001F url(${background}) no-repeat ;
+      background: #01001F url(${background}) repeat-y ;
       background-size:100vw 100vh;
+      height: 100vh;
       -webkit-font-smoothing: antialiased;
   }
   body,input, button,label,textarea{
