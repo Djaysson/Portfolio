@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
  width: 100vw;
@@ -36,10 +37,11 @@ span{
 export const Section = styled.section`
   display: flex;
   flex-direction: row;
-  margin-top: 160px;
+  margin-top: 175px;
   
  
  div{
+
     flex-direction: column;
     width: 50vw;
     margin-left: 20px;
@@ -54,6 +56,7 @@ export const Section = styled.section`
       line-height: 20px;
       text-align: justify;
       font-weight: 500;
+      margin-bottom: 14px;
     }
     strong{
       color: #C81D76;
@@ -83,6 +86,27 @@ export const Aside = styled.aside`
       }
   } }
 `;
+export const LinkButton = styled(Link)`
+  transition: transform 1s;
+  span{
+     border: 2px solid #90235C;
+     background-color: #01001F;
+      border-radius: 15px;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 5px;
+      margin: 10px;
+    &:hover{
+      border: 3px solid #90235C;
+  }
+  }
+  &:hover{
+      -ms-transform: scale(1.1); 
+        -webkit-transform: scale(1.1); 
+        transform: scale(1.1);
+    }
+`;
 export const Button = styled.a`
 display:  flex;
 align-items: center;
@@ -93,6 +117,7 @@ transition: transform 1s;
      width: 25vw;
      text-align: center;
      border: 2px solid #90235C;
+     background-color: #01001F;
       border-radius: 15px;
       color: #FFFFFF;
       font-size: 18px;
