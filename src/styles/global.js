@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import background from '../assets/images/background.jpg';
 
 
 
@@ -12,8 +11,7 @@ export default createGlobalStyle`
       box-sizing: border-box;
   }
   body{
-      background: #01001F url(${background}) repeat-y ;
-      background-size:100vw 100vh;
+    background: rgb(8, 8, 26) none repeat scroll 0% 0%;
       height: 100vh;
       -webkit-font-smoothing: antialiased;
   }

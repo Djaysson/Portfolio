@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.header`
-    min-width: 260px;
-    height: 100vh;
-    background-color: #01001F;
-    box-shadow:0 0 0.5em #90235C;
+    width: 300px;
+    height:100% ;
+    background: rgb(8, 8, 26);
+    box-shadow:0 0 0.5em #542EFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,9 +53,7 @@ export const Links = styled(Link)`
     &:hover{
       opacity: 0.4;
   }
-    &:focus{
-    color: #90235C;
-  }
+   
 `;
 export const Footer = styled.footer`
  display: flex;

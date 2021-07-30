@@ -5,38 +5,16 @@ export const Container = styled.div`
   height: 100vh;
   animation: fadeIn; 
   animation-duration: 1s; 
-`;
-export const Title = styled.header`
-   margin-top: -100px;
-  display: flex;
-  justify-content: center;
-strong{
-    position: absolute;
-    font-size: 100px;
-    font-weight: bold;
-    text-align: center;
-    opacity:0.2 ;
-}
-span{  
-    position: relative;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    top: 60px;
-    bottom: 40px;
-    left: 5px;
-    right: 95px;
-}
 
 `;
-
 export const ContainerImg = styled.section`
   width: 60vw;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 0.5em;
-  margin-top: 120px;
+  margin-top: 110px;
+  
   article {
     width: 20vw; 
     height: 35vh;
@@ -50,7 +28,7 @@ export const ContainerImg = styled.section`
         height: 35vh;
         border-radius: 8px;
         box-shadow:  0 0 0.5em rgb(106, 90, 205);
-        border: 2px solid rgb(144, 35, 92, 100);
+        border: 2px solid #4545E5;;
       }
         div{ 
           position: absolute;    
@@ -95,7 +73,7 @@ justify-content: center;
 margin-top: 5px;
 
   strong:first-child{
-    border: 2px solid #90235C;
+    border: 2px solid #4545E5;
     background-color: #01001F;
     font-size: 14px;
     font-weight: 700;
@@ -116,7 +94,7 @@ margin-top: 5px;
    
   }
   strong:last-child{
-    border: 2px solid #90235C;
+    border: 2px solid #4545E5;
     background-color: #01001F;   
     font-size: 14px;
     font-weight: 700;

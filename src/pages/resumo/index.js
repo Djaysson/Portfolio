@@ -1,8 +1,12 @@
 import React from 'react';
-import { Container, Title, Section, Footer, Button } from './styles';
+import { Container, Section, Skills } from './styles';
 import HeaderLogo from '../../components/headerLogo/index'
-import { GiDiploma } from "react-icons/gi";
+import LogoEstacio from "../../assets/logos/estacio.png";
+import LogoFreeCode from "../../assets/logos/free.png";
+import LogoDigital from "../../assets/logos/digital.png";
 import { SiRedux } from "react-icons/si";
+import Footer from '../../components/footer/index';
+import TitlePage from '../../components/titlePage/index';
 import {
     FaHtml5,
     FaCss3Alt,
@@ -24,47 +28,40 @@ function Resumo() {
     return (
         <Container>
             <HeaderLogo />
-            <Title>
-                <strong>Rusumo</strong>
-                <span>Resumir</span>
-            </Title>
+            <TitlePage subtitle="Rusumo" title="Resumir" />
             <Section>
                 <h1>Minha Educação</h1>
                 <div>
                     <div>
                         <span>2018 - 2020</span>
                         <p>Análise e Desenvolvimento de Sistemas</p>
-                        <a href="http://" target="blank">Universidade  <GiDiploma size={25} color="#90235C" /></a>
+                        <p>Universidade Estácio</p>
+                        <a href="http://encurtador.com.br/ezCMN" target="blank"><img src={LogoEstacio} alt="Logo Estácio" /> </a>
                     </div>
                     <div>
                         <span>2018 - 2020</span>
-                        <p>Análise e Desenvolvimento de Sistemas</p>
-                        <a href="http://" target="blank">Universidade Estácio <GiDiploma size={25} color="#90235C" /></a>
+                        <p>JavaScript Algorithms and Data Structures</p>
+                        <p>FreeCodeCamp</p>
+                        <a href="http://encurtador.com.br/fluAF" target="blank"><img src={LogoFreeCode} alt="Logo Estácio" /> </a>
                     </div>
                     <div>
                         <span>2018 - 2020</span>
-                        <p>Análise e Desenvolvimento de Sistemas</p>
-                        <a href="http://" target="blank">Universidade Estácio <GiDiploma size={25} color="#90235C" /></a>
+                        <p>bootcamp Become Remote</p>
+                        <p>Digital Innovation One</p>
+                        <a href="http://encurtador.com.br/dCFJT" target="blank"><img src={LogoDigital} alt="Logo Estácio" /> </a>
                     </div>
                     <div>
                         <span>2018 - 2020</span>
-                        <p>Análise e Desenvolvimento de Sistemas</p>
-                        <a href="http://" target="blank">Universidade Estácio <GiDiploma size={25} color="#90235C" /></a>
+                        <p>Responsive Web Design</p>
+                        <p>FreeCodeCamp</p>
+                        <a href="http://" target="blank"><img src={LogoFreeCode} alt="Logo Estácio" /> </a>
                     </div>
-                    <div>
-                        <span>2018 - 2020</span>
-                        <p>Análise e Desenvolvimento de Sistemas</p>
-                        <a href="http://" target="blank">Universidade Estácio <GiDiploma size={25} color="#90235C" /></a>
-                    </div>
-                    <div>
-                        <span>2018 - 2020</span>
-                        <p>Análise e Desenvolvimento de Sistemas</p>
-                        <a href="http://" target="blank">Universidade Estácio <GiDiploma size={25} color="#90235C" /></a>
-                    </div>
+
+
                 </div>
 
             </Section>
-            <Footer>
+            <Skills>
                 <div>
                     <h1>Soft Skills</h1>
                     <ul>
@@ -139,10 +136,9 @@ function Resumo() {
                         </li>
                     </ul>
                 </div>
-            </Footer>
-            <Button href="https://drive.google.com/file/d/1BlQascd2UED4FeVPEJk88prpn4N84QpR/view?usp=sharing" target="_blank">
-                <strong>📋 Currículo</strong>
-            </Button>
+            </Skills>
+
+            <Footer />
         </Container>
     );
 }

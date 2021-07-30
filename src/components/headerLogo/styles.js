@@ -7,15 +7,13 @@ export const Container = styled.header`
     margin: 10px;
     img{
       transition: transform .2s;
-      max-width: 120px;
+    height: 8vh;
+      width: 7vw;
       &:hover{
         -ms-transform: scale(1.1); 
         -webkit-transform: scale(1.1); 
         transform: scale(1.1);
       }
     }
-      `;
-
-
-
+`;
 

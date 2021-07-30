@@ -6,31 +6,10 @@ export const Container = styled.div`
   animation: fadeIn; 
   animation-duration: 1s; 
 `;
-export const Title = styled.header`
-  margin-top: -100px;
-  display: flex;
-  justify-content: center;
-strong{
-    position: absolute;
-    font-size: 100px;
-    font-weight: bold;
-    text-align: center;
-    opacity:0.2 ;
-}
-span{  
-    position: relative;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    top: 60px;
-    bottom: 40px;
-    left: 5px;
-    right: 95px;
-}
-`;
+
 export const Section = styled.section`
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   padding-left: 85px;
@@ -43,19 +22,19 @@ export const Section = styled.section`
     }
     div{
     display: grid;
-    grid-template-columns: repeat(3,0.3fr);
-    margin-bottom: 18px;
+    grid-template-columns: repeat(2,0.5fr);
+    margin-bottom: 10px;
     
     div{
     display: flex;
     flex-direction: column;
-    border: 2px solid #90235C;
+    border: 2px solid #4545E5;
     background-color: #01001F;
     border-radius: 5px;
-    width: 22vw;
-    height: auto;
+    width:30vw;
+    height: 21vh;
       span{
-       background-color: #90235C;
+       background-color: #4545E5;
        text-align: center;
        margin: 4px 4px 0px 4px;
       }
@@ -68,11 +47,16 @@ export const Section = styled.section`
         font-size: 14px;
        font-weight: 500; 
        color: #FFF;  
-       padding-left: 15px;
        transition: transform 1s;
+       img{ 
+         padding-left: 28px;
+         margin-top: 8px;
+         width: 80px;
+         height: 30px;
+       }
 
        &:hover{
-        color: #C81D76;
+        color: #4545E5;
         -ms-transform: scale(1.1); 
         -webkit-transform: scale(1.1); 
         transform: scale(1.1);
@@ -82,7 +66,7 @@ export const Section = styled.section`
     }
   }
 `;
-export const Footer = styled.footer`
+export const Skills = styled.footer`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,6 +74,7 @@ export const Footer = styled.footer`
   margin-right: 10px;
 
   div:first-child{
+ 
   
    h1{
     text-align: center;
@@ -109,7 +94,7 @@ export const Footer = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid #90235C;
+    border: 2px solid #4545E5;
     background-color: #01001F;
     border-radius: 5px;
     width: 11vw;
@@ -143,7 +128,7 @@ export const Footer = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid #90235C;
+    border: 2px solid #4545E5;
     background-color: #01001F;
     border-radius: 5px;
     width: 11vw;
@@ -157,26 +142,4 @@ export const Footer = styled.footer`
      text-align: center;
    }
  }
-`;
-export const Button = styled.a`
-display:  flex;
-align-items: center;
-justify-content: center;
-margin-top: 20px;
-  strong{
-     width: 12vw;
-     text-align: center;
-     border: 2px solid #90235C;
-     background-color: #01001F;
-      border-radius: 15px;
-      color: #FFFFFF;
-      font-size: 18px;
-      font-weight: 500;
-      padding: 4px;
-      margin: 4px;
-      transition:width border 0.2s;
-    &:hover{
-      border: 3px solid #90235C;      
-    }
-  }
 `;

@@ -1,16 +1,14 @@
 import React from 'react';
-import HeaderTitle from '../../components/headerLogo/index';
-import { Container, Title, Section, LinkButton, Aside, Button } from './styles';
-
+import HeaderLogo from '../../components/headerLogo/index';
+import { Container, Section, LinkButton, Aside, Button } from './styles';
+import TitlePage from '../../components/titlePage/index';
+import Footer from '../../components/footer/index';
 function Sobre() {
     return (
 
         <Container>
-            <HeaderTitle />
-            <Title>
-                <strong>Sobre Mim</strong>
-                <span>Conheça-me mais</span>
-            </Title>
+            <HeaderLogo />
+            <TitlePage subtitle="Sobre Mim" title="Conheça-me mais" />
             <Section>
                 <div>
                     <h1>Eu sou <strong>Djayson Rodrigues</strong>, um Frontend Developer</h1>
@@ -41,6 +39,7 @@ function Sobre() {
                     </Button>
                 </Aside>
             </Section>
+            <Footer />
         </Container>
 
     );

@@ -9,39 +9,14 @@ export const Container = styled.div`
  animation: fadeIn; 
   animation-duration: 1s; 
 `;
-export const Title = styled.header`
- margin-top: -100px;
-  display: flex;
-  justify-content: center;
-strong{
-    position: absolute;
-    font-size: 100px;
-    font-weight: bold;
-    text-align: center;
-    opacity:0.2 ;
-  
-}
-span{  
-    position: relative;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    top: 60px;
-    bottom: 40px;
-    left: 5px;
-    right: 95px;
-}
-
- 
-`;
 export const Section = styled.section`
   display: flex;
   flex-direction: row;
-  margin-top: 175px;
+  margin-top: 160px;
+  z-index: 1;
   
  
  div{
-
     flex-direction: column;
     width: 50vw;
     margin-left: 20px;
@@ -56,15 +31,15 @@ export const Section = styled.section`
       line-height: 20px;
       text-align: justify;
       font-weight: 500;
-      margin-bottom: 14px;
+      margin-bottom: 15px;
     }
     strong{
-      color: #C81D76;
+      color: #4545E5;
     }
  }
 `;
 export const Aside = styled.aside`
-   margin-left: 40px;
+     margin-left: 40px;
    margin-top: 50px;
    width: 25vw;
    ul{
@@ -73,7 +48,7 @@ export const Aside = styled.aside`
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 30px;
-      border-bottom: 1px solid #90235C;
+      border-bottom: 1px solid #4545E5;;
     }
     span{
       padding-left: 4px;
@@ -81,7 +56,7 @@ export const Aside = styled.aside`
       a{
         transition: color.2s;
        &:hover{
-          color: #90235C;
+          color: #4545E5;;
         }
       }
   } }
@@ -89,7 +64,7 @@ export const Aside = styled.aside`
 export const LinkButton = styled(Link)`
   transition: transform 1s;
   span{
-     border: 2px solid #90235C;
+     border: 2px solid #4545E5;
      background-color: #01001F;
       border-radius: 15px;
       color: #FFF;
@@ -98,7 +73,7 @@ export const LinkButton = styled(Link)`
       padding: 5px;
       margin: 10px;
     &:hover{
-      border: 3px solid #90235C;
+      border: 3px solid #4545E5;
   }
   }
   &:hover{
@@ -116,8 +91,7 @@ transition: transform 1s;
   strong{
      width: 25vw;
      text-align: center;
-     border: 2px solid #90235C;
-     background-color: #01001F;
+     border: 2px solid #4545E5;
       border-radius: 15px;
       color: #FFFFFF;
       font-size: 18px;
@@ -126,7 +100,7 @@ transition: transform 1s;
       margin: 5px;
      
     &:hover{
-      border: 3px solid #90235C;
+      border: 3px solid #4545E5;
     }
   }
   &:hover{

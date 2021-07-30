@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import HeaderLogo from '../../components/headerLogo/index'
 import api from "../../server/api";
-
-import { Container, Title, ContainerImg, ContainerButtons } from './styles';
+import { Container, ContainerImg, ContainerButtons } from './styles';
 import { FaLaptopCode, FaGithub, } from 'react-icons/fa'
+import TitlePage from '../../components/titlePage/index';
+import Footer from '../../components/footer/index';
 
 function Portfolio() {
     const [data, setData] = useState([]);
@@ -20,10 +21,8 @@ function Portfolio() {
     return (
         <Container>
             <HeaderLogo />
-            <Title>
-                <strong>Portfolio</strong>
-                <span>Meus projetos</span>
-            </Title>
+            <TitlePage subtitle="Portfolio" title="Meus projetos" />
+
             <ContainerImg >
                 {data.map(projetos => (
                     <article key={projetos.id} >
@@ -42,6 +41,7 @@ function Portfolio() {
                     </article>
                 ))}
             </ContainerImg>
+            <Footer />
         </Container>
     );
 }

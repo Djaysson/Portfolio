@@ -6,29 +6,6 @@ export const Container = styled.div`
   animation: fadeIn; 
   animation-duration: 1s; 
 `;
-export const Title = styled.header`
-   margin-top: -100px;
-  display: flex;
-  justify-content: center;
-strong{
-    position: absolute;
-    font-size: 100px;
-    font-weight: bold;
-    text-align: center;
-    opacity:0.2 ;
-}
-span{  
-    position: relative;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    top: 60px;
-    bottom: 40px;
-    left: 5px;
-    right: 95px;
-}
-
-`;
 export const Section = styled.section`
   display: flex;
   flex-direction: row;
@@ -125,7 +102,7 @@ export const ContainerForm = styled.form`
    justify-content: space-between;
 
    input{
-   border: 2px solid #90235C;
+   border: 2px solid #4545E5;
    background: #01001F;
    width: 27vw;
    height: 7vh;
@@ -138,7 +115,7 @@ export const ContainerForm = styled.form`
       font-weight: 500;
     }
     &:focus{
-      border: 4px solid #90235C;
+      border: 4px solid #4545E5;
    
   }
    }
@@ -148,7 +125,7 @@ export const ContainerForm = styled.form`
     resize: none;
     width: 55vw;
     height: 35vh;
-    border: 2px solid #90235C;
+    border: 2px solid #4545E5;
     background: #01001F;
     padding: 10px;
     margin-bottom: 12px;
@@ -159,22 +136,21 @@ export const ContainerForm = styled.form`
       font-weight: 500;
     }
     &:focus{
-      border: 4px solid #90235C;
-   
-  }
+      border: 4px solid #4545E5;
+    }
   }
 `;
 export const Button = styled.input`
   width: 10vw;
   height: 6vh;
   margin: auto;
-  border: 2px solid #90235C;
+  border: 2px solid #4545E5;
   border-radius: 10px;
   font-weight: 500;
   background: #01001F;
   transition:  transform 1s;
     &:hover{
-      border: 3px solid #90235C;
+      border: 3px solid #4545E5;
       -ms-transform: scale(1.1); 
       -webkit-transform: scale(1.1); 
       transform: scale(1.1);
