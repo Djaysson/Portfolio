@@ -3,10 +3,12 @@ import HeaderLogo from '../../components/headerLogo/index';
 import { Container, Section, LinkButton, Aside, Button } from './styles';
 import TitlePage from '../../components/titlePage/index';
 import img from '../../assets/images/eu1.png'
+import AnimatedBackground from '../../components/background/index'
 
 function Sobre() {
     return (
-
+        <>
+        <AnimatedBackground />
         <Container>
             <HeaderLogo />
             <TitlePage subtitle="Sobre Mim" title="Conheça-me mais" />
@@ -43,7 +45,7 @@ function Sobre() {
             <img src={img} alt="Imagem de fundo" />
 
         </Container>
-
+    </>
     );
 }
 

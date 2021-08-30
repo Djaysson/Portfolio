@@ -10,6 +10,7 @@ export const Container = styled.header`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 
   div{ 
     display: flex;

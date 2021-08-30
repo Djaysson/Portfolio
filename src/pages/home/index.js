@@ -3,9 +3,13 @@ import HeaderLogo from '../../components/headerLogo/index';
 import Typical from "react-typical";
 import { Container, Section, Button } from './styles';
 import Image from '../../assets/images/image.png';
+import AnimatedBackground from '../../components/background/index'
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 function Home() {
     return (
+        <>
+        <AnimatedBackground />
         <Container>
             <HeaderLogo />
             <Section>
@@ -25,13 +29,15 @@ function Home() {
                         ]}
                     />
                 </strong>
-                <Button to="/contato">
-                    <strong>Contrate-me</strong>
+                <Button to="/sobre">
+                    <strong>Saiba mais... <FaAngleDoubleDown size={25}/> </strong>
+                   
                 </Button>
 
             </Section>
             <img src={Image} alt="background" />
         </Container>
+        </>
     );
 }
 

@@ -3,6 +3,8 @@ import HeaderLogo from '../../components/headerLogo/index'
 import { Container, Section, ContainerContato, ContainerForm, Button } from './styles';
 import Footer from '../../components/footer/index';
 import TitlePage from '../../components/titlePage/index';
+import AnimatedBackground from '../../components/background/index'
+
 import {
     FaWhatsappSquare,
     FaPhoneSquareAlt,
@@ -15,6 +17,8 @@ import {
 
 function Contato() {
     return (
+        <>
+        <AnimatedBackground />
         <Container>
             <HeaderLogo />
             <TitlePage subtitle="Contato" title="Entrar em contato" />
@@ -82,6 +86,7 @@ function Contato() {
             </Section>
             <Footer />
         </Container>
+        </>
     );
 }
 

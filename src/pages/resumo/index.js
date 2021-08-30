@@ -6,6 +6,8 @@ import LogoFreeCode from "../../assets/logos/free.png";
 import LogoDigital from "../../assets/logos/digital.png";
 import { SiRedux } from "react-icons/si";
 import TitlePage from '../../components/titlePage/index';
+import AnimatedBackground from '../../components/background/index'
+
 import {
     FaHtml5,
     FaCss3Alt,
@@ -25,6 +27,8 @@ import {
 
 function Resumo() {
     return (
+        <>
+        <AnimatedBackground />
         <Container>
             <HeaderLogo />
             <TitlePage subtitle="Rusumo" title="Resumir" />
@@ -146,6 +150,7 @@ function Resumo() {
             </Skills>
 
         </Container>
+        </>
     );
 }
 
