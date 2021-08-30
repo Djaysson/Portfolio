@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithubSquare, FaYoutubeSquare } from 'react-icons/fa'
 import ImgPerfil from '../../assets/images/perfil.png';
-import Logoimg from '../../assets/images/logo.png';
 import { Container, Nav, Links, Footer } from './styles';
 
 
@@ -41,7 +40,7 @@ function Header() {
 
                     </li>
                 </ul>
-                <p>Feito por Djayson Rodrigues <img src={Logoimg} alt="logo" /></p>
+             
             </Footer>
         </Container>
     );

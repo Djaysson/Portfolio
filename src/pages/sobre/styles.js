@@ -8,6 +8,16 @@ export const Container = styled.div`
  flex-direction:column;
  animation: fadeIn; 
   animation-duration: 1s; 
+
+  img:nth-child(4){
+    position: relative;
+    margin-left:auto;
+    width: 32vw;
+    height: 66vh;
+    top: -280px;
+    z-index: 0;
+    
+  }
 `;
 export const Section = styled.section`
   display: flex;

@@ -11,9 +11,9 @@ export const Container = styled.div`
 img:nth-child(3){
     position: relative;
     margin: auto;
-    width: 50vw;
-    height: 50vh;
-    bottom: -20px;
+    width: 55vw;
+    height: 55vh;
+    bottom: -12px;
     z-index: 1;
   }
 `;

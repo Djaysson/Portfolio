@@ -16,25 +16,23 @@
   </a>
 </p>
 
-
 ## 💻 Projeto
 
 O projeto **React Portfólio 2.0** é um aplicação Web que consiste em um portfólio de serviços e foi desenvolvido para mostrar meus projetos e trabalhos como Desenvolvedor.
 
 <h1 align="center">
-    <img alt="Project image" title="Project image" src="./src/assets/images/projeto.png" width="800px" />
+    <img alt="Project image" title="Project image" src="./src/assets/images/projeto.svg" width="800px" />
 </h1>
-
 
 ## 🚀 Tecnologias
 
--  [ReactJS](https://reactjs.org/)
--  [React-Router](https://reactrouter.com/web/guides/quick-start)
--  [Styled-components](https://styled-components.com/)
--  [Json-server](https://github.com/typicode/json-server)
--  [Axios](https://github.com/axios/axios)
--  [React-toastify](https://fkhadra.github.io/react-toastify/introduction)
--  [React-icons](https://react-icons.github.io/react-icons/)
+- [ReactJS](https://reactjs.org/)
+- [React-Router](https://reactrouter.com/web/guides/quick-start)
+- [Styled-components](https://styled-components.com/)
+- [Json-server](https://github.com/typicode/json-server)
+- [Axios](https://github.com/axios/axios)
+- [React-toastify](https://fkhadra.github.io/react-toastify/introduction)
+- [React-icons](https://react-icons.github.io/react-icons/)
 
 ## ℹ️ Como Executar
 
@@ -43,7 +41,6 @@ O projeto **React Portfólio 2.0** é um aplicação Web que consiste em um port
   - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador
   - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
   - Também, é **preciso** ter um gerenciador de pacotes seja o **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
-
 
 1. Faça um clone do repositório:
 
@@ -54,16 +51,14 @@ O projeto **React Portfólio 2.0** é um aplicação Web que consiste em um port
 2. Executando a Aplicação:
 
 ```sh
-  # Vá para o repositório 
+  # Vá para o repositório
   $ cd React-Portfolio-2.0
 
   # Instalando as dependências do projeto.
   $ yarn install # ou npm install
 
-  # Execute o app 
+  # Execute o app
   $ yarn start # ou npm start
 ```
 
-
 Feito com ❤️ por Djayson Rodrigues 👋 [Entrar em contato!](https://www.linkedin.com/in/djaysonrodrigues/)
-

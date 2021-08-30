@@ -4,7 +4,6 @@ import api from "../../server/api";
 import { Container, ContainerImg, ContainerButtons } from './styles';
 import { FaLaptopCode, FaGithub, } from 'react-icons/fa'
 import TitlePage from '../../components/titlePage/index';
-import Footer from '../../components/footer/index';
 
 function Portfolio() {
     const [data, setData] = useState([]);
@@ -41,7 +40,6 @@ function Portfolio() {
                     </article>
                 ))}
             </ContainerImg>
-            <Footer />
         </Container>
     );
 }

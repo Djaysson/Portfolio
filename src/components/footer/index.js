@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container } from './styles';
-import Background from '../../assets/images/backgroundColo.svg';
+import Logoimg from '../../assets/images/logo.png';
 
 function Footer() {
     return (
         <Container>
-            <img src={Background} alt="" />
+               <h2>All Rights Reserved - Djayson Rodrigues <img src={Logoimg} alt="logo" /></h2>
         </Container>
     );
 }

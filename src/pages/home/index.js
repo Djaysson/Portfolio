@@ -2,8 +2,7 @@ import React from 'react';
 import HeaderLogo from '../../components/headerLogo/index';
 import Typical from "react-typical";
 import { Container, Section, Button } from './styles';
-import Image from '../../assets/images/image.svg';
-import Footer from '../../components/footer/index';
+import Image from '../../assets/images/image.png';
 
 function Home() {
     return (
@@ -32,7 +31,6 @@ function Home() {
 
             </Section>
             <img src={Image} alt="background" />
-            <Footer />
         </Container>
     );
 }

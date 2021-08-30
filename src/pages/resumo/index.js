@@ -5,7 +5,6 @@ import LogoEstacio from "../../assets/logos/estacio.png";
 import LogoFreeCode from "../../assets/logos/free.png";
 import LogoDigital from "../../assets/logos/digital.png";
 import { SiRedux } from "react-icons/si";
-import Footer from '../../components/footer/index';
 import TitlePage from '../../components/titlePage/index';
 import {
     FaHtml5,
@@ -36,25 +35,33 @@ function Resumo() {
                         <span>2018 - 2020</span>
                         <p>Análise e Desenvolvimento de Sistemas</p>
                         <p>Universidade Estácio</p>
-                        <a href="http://encurtador.com.br/ezCMN" target="blank"><img src={LogoEstacio} alt="Logo Estácio" /> </a>
+                        <a
+                            href="https://estacio.br/cursos/graduacao/analise-e-desenvolvimento-de-sistemas"
+                            target="blank"><img src={LogoEstacio} alt="Logo Estácio" /> </a>
                     </div>
                     <div>
-                        <span>2018 - 2020</span>
+                        <span>2020 - 2021</span>
                         <p>JavaScript Algorithms and Data Structures</p>
                         <p>FreeCodeCamp</p>
-                        <a href="http://encurtador.com.br/fluAF" target="blank"><img src={LogoFreeCode} alt="Logo Estácio" /> </a>
+                        <a
+                            href="https://www.freecodecamp.org/certification/fcc07f30d36-40e3-46b4-a612-b085a50d2773/javascript-algorithms-and-data-structures"
+                            target="blank"><img src={LogoFreeCode} alt="Logo Estácio" /> </a>
                     </div>
                     <div>
-                        <span>2018 - 2020</span>
+                        <span>2020 - 2021</span>
                         <p>bootcamp Become Remote</p>
                         <p>Digital Innovation One</p>
-                        <a href="http://encurtador.com.br/dCFJT" target="blank"><img src={LogoDigital} alt="Logo Estácio" /> </a>
+                        <a
+                            href="https://certificates.digitalinnovation.one/6CF589DE"
+                            target="blank"><img src={LogoDigital} alt="Logo Estácio" /> </a>
                     </div>
                     <div>
-                        <span>2018 - 2020</span>
+                        <span>2020 - 2021</span>
                         <p>Responsive Web Design</p>
                         <p>FreeCodeCamp</p>
-                        <a href="http://" target="blank"><img src={LogoFreeCode} alt="Logo Estácio" /> </a>
+                        <a
+                            href="https://www.freecodecamp.org/certification/fcc07f30d36-40e3-46b4-a612-b085a50d2773/responsive-web-design"
+                            target="blank"><img src={LogoFreeCode} alt="Logo Estácio" /> </a>
                     </div>
 
 
@@ -138,7 +145,6 @@ function Resumo() {
                 </div>
             </Skills>
 
-            <Footer />
         </Container>
     );
 }

@@ -1,18 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-  position: fixed;
+ position: fixed;
+ margin-left: -130px;
   width: 100%;
   bottom:0px;
-  height: 6vh;
+  height: 4vh;
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 5px;
  
-
-img{
-  object-fit:cover;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
- 
+  img{
+    padding-left: 2px;
+    width: 30px;
+  }
 }
 `;
 

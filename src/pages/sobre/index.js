@@ -2,7 +2,8 @@ import React from 'react';
 import HeaderLogo from '../../components/headerLogo/index';
 import { Container, Section, LinkButton, Aside, Button } from './styles';
 import TitlePage from '../../components/titlePage/index';
-import Footer from '../../components/footer/index';
+import img from '../../assets/images/eu1.png'
+
 function Sobre() {
     return (
 
@@ -39,7 +40,8 @@ function Sobre() {
                     </Button>
                 </Aside>
             </Section>
-            <Footer />
+            <img src={img} alt="Imagem de fundo" />
+
         </Container>
 
     );
