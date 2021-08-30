@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const Container = styled.header`
     width: 300px;
     height:100vh;
-    background: rgb(8, 8, 26);
-    box-shadow:0 0 0.5em #542EFF;
+    background: ${props => props.theme.background};
+    box-shadow:0 0 0.5em ${props => props.theme.darkTransparent};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,12 +16,13 @@ export const Container = styled.header`
     flex-direction: column;
     align-items: center;
     img{
-      width: 240px;
-      height: 250px;
+      margin-top: -70px;
+      width: 237px;
+      height: 260px;
     } 
     strong{
       margin-top: 10px;
-      font-size: 20px;
+      font-size: 25px;
     }
   }
 `;
@@ -36,7 +37,7 @@ export const Nav = styled.nav`
   
   }
   li{
-     font-size: 17px;
+     font-size: 18px;
      padding: 10px;
      text-align: center;
   }
@@ -45,10 +46,10 @@ export const Nav = styled.nav`
 export const Links = styled(Link)`
    text-decoration:none;
    font-weight: 500;
-   color: #FFFFFF;
+   color: ${props => props.theme.font};
    transition: opacity color 0.2s;
     &:hover{
-      opacity: 0.4;
+      border-bottom:4px solid ${props => props.theme.secondary};
   }
    
 `;
@@ -64,7 +65,7 @@ export const Footer = styled.footer`
    }
    li{
      padding-right: 10px;
-     margin-bottom: 5px;
+     margin-bottom: 10px;
      transition: opacity color 0.2s;
      &:hover{
       opacity: 0.4;
