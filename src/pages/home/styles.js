@@ -15,6 +15,8 @@ img:nth-child(3){
     width: 55vw;
     height: 55vh;
     top: -2px;
+    animation: zoomIn; 
+  animation-duration: 4s; 
   }
 `;
 export const Section = styled.section`
@@ -31,15 +33,15 @@ margin-top: 30px;
   strong{
   font-size: 50px;
   font-weight: 700;
-  b{
-    color: ${props => props.theme.secondary};
-  }
+    b{
+      color: ${props => props.theme.secondary};
+    }
   }
   
 `;
 export const Button = styled(Link)`
   margin-top: 10px;
-  transition: transform 1s;
+  transition: transform 2s;
   z-index: 1;
 
   strong{
@@ -50,6 +52,10 @@ export const Button = styled(Link)`
       font-size: 18px;
       font-weight: 500;
       padding: 10px;
+      svg{
+       margin: auto;
+        animation: movingAnimation 2s  infinite;
+      }
     &:hover{
       background: ${props => props.theme.primary};
   }
@@ -59,4 +65,16 @@ export const Button = styled(Link)`
         -webkit-transform: scale(1.1); 
         transform: scale(1.1);
     }
+    @keyframes movingAnimation {
+    0% {
+      opacity: 1;
+      transform:  translateY(5px);
+      
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+   
+    }
+  }
 `;

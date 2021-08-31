@@ -13,7 +13,8 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   padding-left: 85px;
-
+  animation:  bounceInDown; 
+  animation-duration: 3s; 
   h1{
     font-size: 20px;
     font-weight: 700;
@@ -72,7 +73,8 @@ export const Skills = styled.footer`
   justify-content: space-between;
   margin-left: 10px;
   margin-right: 10px;
-
+  animation:  bounceInDown; 
+  animation-duration: 2s; 
   div:first-child{
  
   

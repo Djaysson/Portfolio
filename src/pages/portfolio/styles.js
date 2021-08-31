@@ -18,6 +18,19 @@ export const ContainerImg = styled.section`
   article {
     width: 20vw; 
     height: 35vh;
+    animation: animated  4s alternate infinite;
+
+    @keyframes animated{
+    0% {
+      transform:  rotatey(5deg);
+      filter: drop-shadow(2px 2px 6px ${props => props.theme.primary});
+    }
+    100% {
+
+      transform: rotateY(-30deg);
+    }
+  }
+
     div{
         display: flex;
         flex-direction: column;

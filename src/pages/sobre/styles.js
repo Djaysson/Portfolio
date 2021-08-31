@@ -16,7 +16,20 @@ export const Container = styled.div`
     height: 66vh;
     top: -280px;
     z-index: 0;
-    
+    animation: animatedImage 4s alternate infinite;
+
+    @keyframes animatedImage{
+      0% {
+        filter: drop-shadow(0px);
+        transform:  translateX(0px);
+      
+      }
+      100% {
+        filter: drop-shadow(100px -60px 100px ${props => props.theme.primary});
+        transform: translateX(-50px);
+        
+      }
+    }
   }
 `;
 export const Section = styled.section`
@@ -34,6 +47,8 @@ export const Section = styled.section`
       margin-bottom: 20px;
       font-size: 25px;
       font-weight: 700;
+      animation:  bounceInDown; 
+      animation-duration: 3s; 
     }
     p{
       font-size:16px; 
@@ -42,6 +57,18 @@ export const Section = styled.section`
       text-align: justify;
       font-weight: 500;
       margin-bottom: 15px;
+    }
+    p:nth-child(2){
+     animation:  flipInY; 
+     animation-duration: 3s; 
+    }
+    p:nth-child(3){
+     animation: flipInY; 
+     animation-duration: 4s; 
+    }
+    p:nth-child(4){
+     animation: flipInY; 
+     animation-duration: 5s; 
     }
     strong{
       color: #4545E5;
@@ -59,6 +86,18 @@ export const Aside = styled.aside`
       font-weight: 500;
       margin-bottom: 30px;
       border-bottom: 1px solid #4545E5;;
+    }
+    li:nth-child(1){
+     animation:  flipInY; 
+     animation-duration: 3s; 
+    }
+    li:nth-child(2){
+     animation: flipInY; 
+     animation-duration: 4s; 
+    }
+    li:nth-child(3){
+     animation: flipInY; 
+     animation-duration: 5s; 
     }
     span{
       padding-left: 4px;

@@ -15,13 +15,13 @@ export const Section = styled.section`
   
 `;
 export const ContainerContato = styled.div`
-
 display: flex;
 flex-direction: column;
 
 div:first-child{
     margin-left: 20px;
-    
+    animation:  bounceInDown; 
+    animation-duration: 3s; 
    h1{
     font-size: 18px;
     font-weight: 500;
@@ -53,6 +53,8 @@ div:first-child{
 
 div:last-child{
     margin-left: 20px;
+    animation:  bounceInDown; 
+    animation-duration: 2s; 
   
    h1{
     text-align: center;
@@ -95,6 +97,8 @@ export const ContainerForm = styled.form`
     font-size: 18px;
     font-weight: 500; 
    text-transform: uppercase;
+   animation:  bounceInDown; 
+      animation-duration: 3s; 
   }
   div{
    display: flex;
@@ -110,6 +114,8 @@ export const ContainerForm = styled.form`
    border-radius: 10px;
    margin-bottom: 12px;
    transition:  border 0.2s;
+   animation:  bounceInDown; 
+   animation-duration: 3s; 
     &::placeholder{
       color: #FFF;
       font-weight: 500;
@@ -131,6 +137,8 @@ export const ContainerForm = styled.form`
     margin-bottom: 12px;
     border-radius: 10px;
     transition:  border 0.2s;
+    animation:  bounceInDown; 
+    animation-duration: 2s; 
    &::placeholder{
       color: #FFF;
       font-weight: 500;
