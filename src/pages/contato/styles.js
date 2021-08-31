@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  animation: fadeIn; 
-  animation-duration: 1s; 
+  animation: bounceInDown; 
+  animation-duration: 2s; 
 `;
 export const Section = styled.section`
   display: flex;

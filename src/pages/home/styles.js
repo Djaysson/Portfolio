@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: fadeIn; 
+  animation: bounceInDown; 
   animation-duration: 2s; 
 img:nth-child(3){
     position: relative;

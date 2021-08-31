@@ -6,8 +6,8 @@ export const Container = styled.div`
  height: 100vh;
  display: flex;
  flex-direction:column;
- animation: fadeIn; 
-  animation-duration: 1s; 
+ animation: bounceInDown; 
+  animation-duration: 2s; 
 
   img:nth-child(4){
     position: relative;
