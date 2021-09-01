@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
  width: 100vw;
@@ -8,13 +7,15 @@ export const Container = styled.div`
  flex-direction:column;
  animation: bounceInDown; 
   animation-duration: 2s; 
+  overflow: hidden;
+ 
 
   img:nth-child(4){
     position: relative;
-    margin-left:auto;
     width: 32vw;
-    height: 66vh;
-    top: -280px;
+    height: 65vh;
+    right: -680px;
+    bottom: 240px;
     z-index: 0;
     animation: animatedImage 4s alternate infinite;
 
@@ -26,7 +27,7 @@ export const Container = styled.div`
       }
       100% {
         filter: drop-shadow(100px -60px 100px ${props => props.theme.primary});
-        transform: translateX(-50px);
+        transform: translateX(-90px);
         
       }
     }
@@ -35,7 +36,7 @@ export const Container = styled.div`
 export const Section = styled.section`
   display: flex;
   flex-direction: row;
-  margin-top: 160px;
+  margin-top: 198px;
   z-index: 1;
   
  
@@ -48,30 +49,30 @@ export const Section = styled.section`
       font-size: 25px;
       font-weight: 700;
       animation:  bounceInDown; 
-      animation-duration: 3s; 
+      animation-duration: 8s; 
     }
     p{
       font-size:16px; 
       text-indent:10px;
       line-height: 20px;
-      text-align: justify;
+      text-align: left;
       font-weight: 500;
       margin-bottom: 15px;
     }
     p:nth-child(2){
-     animation:  flipInY; 
-     animation-duration: 3s; 
+      animation:bounceInDown;  
+     animation-duration: 6s; 
     }
     p:nth-child(3){
-     animation: flipInY; 
+     animation:bounceInDown; 
      animation-duration: 4s; 
     }
     p:nth-child(4){
-     animation: flipInY; 
-     animation-duration: 5s; 
+    animation:bounceInDown; 
+     animation-duration: 2s; 
     }
     strong{
-      color: #4545E5;
+      color: ${props => props.theme.secondary};
     }
  }
 `;
@@ -85,19 +86,19 @@ export const Aside = styled.aside`
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 30px;
-      border-bottom: 1px solid #4545E5;;
+      border-bottom: 1px solid ${props => props.theme.secondary};
     }
     li:nth-child(1){
-     animation:  flipInY; 
-     animation-duration: 3s; 
+      animation:bounceInDown; 
+     animation-duration: 8s; 
     }
     li:nth-child(2){
-     animation: flipInY; 
-     animation-duration: 4s; 
+      animation:bounceInDown; 
+     animation-duration: 6s; 
     }
     li:nth-child(3){
-     animation: flipInY; 
-     animation-duration: 5s; 
+      animation:bounceInDown; 
+     animation-duration: 4s; 
     }
     span{
       padding-left: 4px;
@@ -105,32 +106,12 @@ export const Aside = styled.aside`
       a{
         transition: color.2s;
        &:hover{
-          color: #4545E5;;
+          color: ${props => props.theme.secondary};
         }
       }
   } }
 `;
-export const LinkButton = styled(Link)`
-  transition: transform 1s;
-  span{
-     border: 2px solid #4545E5;
-     background-color: #01001F;
-      border-radius: 15px;
-      color: #FFF;
-      font-size: 16px;
-      font-weight: 500;
-      padding: 5px;
-      margin: 10px;
-    &:hover{
-      border: 3px solid #4545E5;
-  }
-  }
-  &:hover{
-      -ms-transform: scale(1.1); 
-        -webkit-transform: scale(1.1); 
-        transform: scale(1.1);
-    }
-`;
+
 export const Button = styled.a`
 display:  flex;
 align-items: center;
@@ -138,18 +119,20 @@ justify-content: center;
 transition: transform 1s;
 
   strong{
-     width: 25vw;
-     text-align: center;
-     border: 2px solid #4545E5;
-      border-radius: 15px;
-      color: #FFFFFF;
-      font-size: 18px;
-      font-weight: 500;
-      padding: 5px;
-      margin: 5px;
-     
+    width: 25vw;
+    text-align: center;
+    background: ${props => props.theme.secondary};
+    box-shadow: 0px 0px 15px ${props => props.theme.darkTransparent};
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    margin: 5px;
+    animation:bounceInDown; 
+    animation-duration: 2s; 
     &:hover{
-      border: 3px solid #4545E5;
+      background: ${props => props.theme.primary};
     }
   }
   &:hover{

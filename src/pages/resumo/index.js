@@ -31,7 +31,7 @@ function Resumo() {
         <AnimatedBackground />
         <Container>
             <HeaderLogo />
-            <TitlePage subtitle="Rusumo" title="Resumir" />
+            <TitlePage subtitle="Resumo" title="Resumir" />
             <Section>
                 <h1>Minha Educação</h1>
                 <div>

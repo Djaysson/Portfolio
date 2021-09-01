@@ -20,7 +20,7 @@ img:nth-child(3){
   }
 `;
 export const Section = styled.section`
-margin-top: 30px;
+margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,8 @@ export const Button = styled(Link)`
   strong{
     border: none;
     background-color: ${props => props.theme.secondary};
-      border-radius: 15px;
+    box-shadow: 0px 0px 15px ${props => props.theme.darkTransparent};
+    border-radius: 15px;
       color: #FFFFFF;
       font-size: 18px;
       font-weight: 500;

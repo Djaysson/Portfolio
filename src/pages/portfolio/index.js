@@ -33,10 +33,12 @@ function Portfolio() {
                         <div>
                             <div >
                                 <strong>{projetos.title}</strong>
+                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.indústria tipográfica e de impressos.indústria tipográfica e de impressos.</p>
+                                <p>HTML - CSS - JS - REACT</p>
                                 <span>
                                     <ContainerButtons>
-                                        <strong><a href={projetos.linkGithub} target="_blank" ><FaGithub size={12} /> Github</a></strong>
-                                        <strong><a href={projetos.linkDemo} target="_blank"><FaLaptopCode size={12} /> Demo</a></strong>
+                                        <strong><a href={projetos.linkGithub} target="blank" ><FaGithub size={12} /> Github</a></strong>
+                                        <strong><a href={projetos.linkDemo} target="blank"><FaLaptopCode size={12} /> Demo</a></strong>
                                     </ContainerButtons>
                                 </span>
                             </div>

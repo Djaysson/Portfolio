@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderLogo from '../../components/headerLogo/index';
-import { Container, Section, LinkButton, Aside, Button } from './styles';
+import { Container, Section, Aside, Button } from './styles';
 import TitlePage from '../../components/titlePage/index';
 import img from '../../assets/images/eu1.png'
 import AnimatedBackground from '../../components/background/index'
@@ -18,9 +18,7 @@ function Sobre() {
                     <p> Minha formação é em Análise e Desenvolvimento de sistemas na Universidade Estácio, sou uma pessoa apaixonado pelo desenvolvimento de software e fascinado por novos desafios na área TI, estou envolvido na área a 3 anos e sou do tipo de pessoa que adora uma boa UX e UI agradáveis ao usuário.  </p>
                     <p> Um desenvolvedor que visa promover a entregar produtos da melhor qualidade. Alguém que acredita que perseverança, esforço e determinação levam aos melhores resultados. Estou sempre focado em provar as melhores práticas, fundamentos e consistência através do código.</p>
                     <p> Venha ver alguns dos meus projetos e se você tem algum projeto a ser feito, eu posso ajuda a construir o seu projeto, tudo isso a um preço acessível. </p>
-                    <LinkButton to="/contato">
-                        <span>Entre em contato</span>
-                    </LinkButton>
+                    
                 </div>
                 <Aside>
                     <ul>

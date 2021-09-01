@@ -10,18 +10,19 @@ export const Section = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 150px;
+  margin-top: 180px;
   padding: 20px;
   
 `;
 export const ContainerContato = styled.div`
+
 display: flex;
 flex-direction: column;
+z-index: 1;
 
 div:first-child{
     margin-left: 20px;
-    animation:  bounceInDown; 
-    animation-duration: 3s; 
+    
    h1{
     font-size: 18px;
     font-weight: 500;
@@ -37,15 +38,17 @@ div:first-child{
     display: flex;
     align-items: center;
     transition: opacity 0.2s;
+    svg{
+      box-shadow: 0px 0px 3px ${props => props.theme.darkTransparent};
+    }
     &:hover{
     opacity: 0.4;
-    
-  }
-    
+    }
     a{
     margin-left: 10px;
     font-size: 17px;
     font-weight: 500;
+    color: ${props => props.theme.fontLight};
     }
    }
 
@@ -53,8 +56,6 @@ div:first-child{
 
 div:last-child{
     margin-left: 20px;
-    animation:  bounceInDown; 
-    animation-duration: 2s; 
   
    h1{
     text-align: center;
@@ -74,6 +75,10 @@ div:last-child{
     align-items: center;
     margin: auto;
     transition: opacity 0.2s;
+    svg{
+      box-shadow: 0px 0px 3px ${props => props.theme.darkTransparent};
+
+    }
     &:hover{
     opacity: 0.4;
     
@@ -93,72 +98,80 @@ export const ContainerForm = styled.form`
   flex-direction: column;
   margin-right: 30px;
   width: 55vw;
+  z-index: 1;
   label{
+    margin-bottom: 5px;
     font-size: 18px;
     font-weight: 500; 
-   text-transform: uppercase;
-   animation:  bounceInDown; 
-      animation-duration: 3s; 
+    text-transform: uppercase;
   }
   div{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
 
-   input{
-   border: 2px solid #4545E5;
-   background: #01001F;
-   width: 27vw;
-   height: 7vh;
-   padding-left: 10px;
-   border-radius: 10px;
-   margin-bottom: 12px;
-   transition:  border 0.2s;
-   animation:  bounceInDown; 
-   animation-duration: 3s; 
-    &::placeholder{
-      color: #FFF;
-      font-weight: 500;
+    input{
+      border: none;
+      border-bottom: 4px solid ${props => props.theme.secondary};
+      background:${props => props.theme.itemBackgroundColor};
+      width: 27vw;
+      height: 7vh;
+      padding-left: 10px;
+      border-radius: 5px;
+      margin-bottom: 12px;
+      transition:  border 0.2s;
+      &::placeholder{
+        color: ${props => props.theme.fontLight};
+        font-weight: 400;
+        opacity: 0.3;
+      }
+      &:focus{
+        border: none;
+        background:${props => props.theme.itemBackgroundColor};
+        border-bottom: 4px solid ${props => props.theme.primary};
+      }
+      &:-webkit-autofill {
+        box-shadow: 0 0 0 30px ${props => props.theme.itemBackgroundColor} inset;
+      -webkit-text-fill-color: ${props => props.theme.fontLight} !important;
+     }
     }
-    &:focus{
-      border: 4px solid #4545E5;
-   
-  }
-   }
   }
 
   textarea{
     resize: none;
     width: 55vw;
     height: 35vh;
-    border: 2px solid #4545E5;
-    background: #01001F;
+    border: none;
+    border-bottom: 4px solid ${props => props.theme.secondary};
+    background:${props => props.theme.itemBackgroundColor};
     padding: 10px;
     margin-bottom: 12px;
     border-radius: 10px;
     transition:  border 0.2s;
-    animation:  bounceInDown; 
-    animation-duration: 2s; 
-   &::placeholder{
-      color: #FFF;
-      font-weight: 500;
+    &::placeholder{
+      color: ${props => props.theme.fontLight};
+        font-weight: 400;
+        opacity: 0.3;
+      }
+      &:focus{
+        border: none;
+        background:${props => props.theme.itemBackgroundColor};
+        border-bottom: 4px solid ${props => props.theme.primary};
+      }
     }
-    &:focus{
-      border: 4px solid #4545E5;
-    }
-  }
 `;
 export const Button = styled.input`
   width: 10vw;
   height: 6vh;
   margin: auto;
-  border: 2px solid #4545E5;
+  border: none;
   border-radius: 10px;
   font-weight: 500;
-  background: #01001F;
-  transition:  transform 1s;
+  background:${props => props.theme.secondary};
+  box-shadow: 0px 0px 15px ${props => props.theme.darkTransparent};
+ transition:  transform 1s;
     &:hover{
-      border: 3px solid #4545E5;
+      background: ${props => props.theme.primary};
       -ms-transform: scale(1.1); 
       -webkit-transform: scale(1.1); 
       transform: scale(1.1);
