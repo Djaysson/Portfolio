@@ -105,6 +105,9 @@ export const ContainerButtons = styled.footer`
   justify-content: center;
   margin-top: 5px;
 
+  a{
+    color: ${props => props.theme.font};
+  }
   strong:first-child{
     background: ${props => props.theme.secondary};
     font-size: 14px;

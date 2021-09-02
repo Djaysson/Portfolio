@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.header`
@@ -44,10 +44,10 @@ export const Nav = styled.nav`
   }
  
 `;
-export const Links = styled(Link)`
+export const Links = styled(NavLink)`
    text-decoration:none;
    font-weight: 500;
-   color: ${props => props.theme.font};
+   color: ${props =>props.theme.font};
    transition: opacity color 0.2s;
     &:hover{
       border-bottom:4px solid ${props => props.theme.secondary};

@@ -4,6 +4,7 @@ import ImgPerfil from '../../assets/images/perfil.png';
 import { Container, Nav, Links, Footer } from './styles';
 
 
+
 function Header() {
     return (
         <Container>
@@ -13,11 +14,11 @@ function Header() {
             </div>
             <Nav>
                 <ul>
-                    <li><Links to="/">Home</Links></li>
-                    <li><Links to="/sobre">Sobre mim</Links></li>
-                    <li><Links to="/resumo">Resumo</Links></li>
-                    <li><Links to="/portfolio">Portfolio</Links></li>
-                    <li><Links to="/contato">Contato</Links></li>
+                    <li><Links to="/" exact activeStyle={{color:'#4717F6'}}>Home</Links></li>
+                    <li><Links to="/sobre" activeStyle={{color:'#4717F6'}}>Sobre mim</Links></li>
+                    <li><Links to="/resumo" activeStyle={{color:'#4717F6'}}>Resumo</Links></li>
+                    <li><Links to="/portfolio" activeStyle={{color:'#4717F6'}} >Portfolio</Links></li>
+                    <li><Links to="/contato" activeStyle={{color:'#4717F6'}}>Contato</Links></li>
                 </ul>
             </Nav>
             <Footer>

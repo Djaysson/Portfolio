@@ -102,9 +102,12 @@ export const Aside = styled.aside`
     }
     span{
       padding-left: 4px;
+      
      
       a{
         transition: color.2s;
+        color: ${props => props.theme.font};
+
        &:hover{
           color: ${props => props.theme.secondary};
         }
@@ -124,7 +127,7 @@ transition: transform 1s;
     background: ${props => props.theme.secondary};
     box-shadow: 0px 0px 15px ${props => props.theme.darkTransparent};
     border-radius: 15px;
-    color: #FFFFFF;
+    color: ${props => props.theme.font};
     font-size: 18px;
     font-weight: 500;
     padding: 5px;

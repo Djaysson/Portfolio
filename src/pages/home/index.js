@@ -30,8 +30,7 @@ function Home() {
                     />
                 </strong>
                 <Button to="/sobre">
-                    <strong>Saiba mais... <FaAngleDoubleDown size={25}/> </strong>
-                   
+                    <strong>Saiba mais... <FaAngleDoubleDown size={25}/> </strong>     
                 </Button>
 
             </Section>
