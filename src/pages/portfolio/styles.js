@@ -5,7 +5,6 @@ export const Container = styled.div`
   height: 100vh;
   animation: bounceInDown; 
   animation-duration: 2s; 
-
 `;
 export const ContainerImg = styled.section`
   @keyframes animed {
