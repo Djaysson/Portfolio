@@ -21,20 +21,20 @@ flex-direction: column;
 z-index: 1;
 
 div:first-child{
-    margin-left: 20px;
+  margin-left: 20px;
     
-   h1{
+  h1{
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 10px;
     text-transform: uppercase;
     }
-   ul{
+  ul{
     list-style: none;  
     display: flex;
     flex-direction: column;  
-   }
-   li{
+  }
+  li{
     display: flex;
     align-items: center;
     transition: opacity 0.2s;
@@ -50,14 +50,13 @@ div:first-child{
     font-weight: 500;
     color: ${props => props.theme.fontLight};
     }
-   }
-
+  }
 }
 
 div:last-child{
-    margin-left: 20px;
+  margin-left: 20px;
   
-   h1{
+  h1{
     text-align: center;
     font-size: 18px;
     font-weight: 500;
@@ -65,30 +64,27 @@ div:last-child{
     margin-top: 50px;
     padding-bottom: 10px;
     }
-   ul{
+  ul{
     list-style: none;  
     display: flex;
     flex-direction: row;    
-   }
-   li{
+  }
+  li{
     display: flex;
     align-items: center;
     margin: auto;
     transition: opacity 0.2s;
     svg{
       box-shadow: 0px 0px 3px ${props => props.theme.darkTransparent};
-
     }
     &:hover{
     opacity: 0.4;
-    
-  }
-    
+    }
     a{
     margin-left: 10px;
     
     }
-   }
+  }
 
 }
   
@@ -106,10 +102,9 @@ export const ContainerForm = styled.form`
     text-transform: uppercase;
   }
   div{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
     input{
       border: none;
       border-bottom: 4px solid ${props => props.theme.secondary};
@@ -133,7 +128,7 @@ export const ContainerForm = styled.form`
       &:-webkit-autofill {
         box-shadow: 0 0 0 30px ${props => props.theme.itemBackgroundColor} inset;
       -webkit-text-fill-color: ${props => props.theme.fontLight} !important;
-     }
+    }
     }
   }
 
@@ -169,12 +164,11 @@ export const Button = styled.input`
   font-weight: 500;
   background:${props => props.theme.secondary};
   box-shadow: 0px 0px 15px ${props => props.theme.darkTransparent};
- transition:  transform 1s;
+  transition:  transform 1s;
     &:hover{
       background: ${props => props.theme.primary};
       -ms-transform: scale(1.1); 
       -webkit-transform: scale(1.1); 
       transform: scale(1.1);
     }
-   
 `;

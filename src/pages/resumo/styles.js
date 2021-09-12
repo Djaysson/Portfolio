@@ -36,9 +36,9 @@ export const Section = styled.section`
     width:30vw;
     height: 21vh;
       span{
-       background-color: ${props => props.theme.secondary};
-       text-align: center;
-       margin: 4px 4px 0px 4px;
+      background-color: ${props => props.theme.secondary};
+      text-align: center;
+      margin: 4px 4px 0px 4px;
       }
       p{
         font-size: 16px;
@@ -48,22 +48,21 @@ export const Section = styled.section`
       }
       a{
         font-size: 14px;
-       font-weight: 500; 
-       color: ${props => props.theme.font};
-       transition: transform 1s;
-       img{ 
-         padding-left: 28px;
-         margin-top: 8px;
-         width: 80px;
-         height: 30px;
-       }
-
-       &:hover{
+        font-weight: 500; 
+        color: ${props => props.theme.font};
+        transition: transform 1s;
+      img{ 
+        padding-left: 28px;
+        margin-top: 8px;
+        width: 80px;
+        height: 30px;
+      }
+      &:hover{
         color: ${props => props.theme.secondary};
         -ms-transform: scale(1.1); 
         -webkit-transform: scale(1.1); 
         transform: scale(1.1);
-    }
+      }
       }
     
     }
@@ -77,22 +76,20 @@ export const Skills = styled.footer`
   margin-right: 10px;
   animation:  bounceInDown; 
   animation-duration: 2s; 
-  div:first-child{
+div:first-child{
     z-index: 1; 
-   h1{
+  h1{
     text-align: center;
     font-size: 20px;
     color: ${props => props.theme.font};
-   
-   }
-   ul{
-   list-style: none;
-   display: grid;
-   grid-template-columns: repeat(3,0.7fr);
-   grid-gap: 0.3em;
-
-   }
-   li{
+  }
+  ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,0.7fr);
+    grid-gap: 0.3em;
+  }
+  li{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,29 +102,27 @@ export const Skills = styled.footer`
     height: 7vh;
     padding: 5px;
     
-   }
-   span{
-     font-size: 12px;
-     font-weight: 500;
-     text-align: center;
-   }
- }
- div:last-child{
+  }
+  span{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+div:last-child{
   z-index: 1; 
   h1{
     text-align: center;
     font-size: 20px;
     color: ${props => props.theme.font};
-   
-   }
-   ul{
-   list-style: none;
-   display: grid;
-   grid-template-columns: repeat(4,0.7fr);
-   grid-gap: 0.3em;
-
-   }
-   li{
+  }
+  ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,0.7fr);
+    grid-gap: 0.3em;
+  }
+  li{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,13 +133,12 @@ export const Skills = styled.footer`
     border-radius: 15px;
     width: 11vw;
     height: 7vh;
-    padding: 5px;
-    
-   }
-   span{
-     font-size: 12px;
-     font-weight: 500;
-     text-align: center;
-   }
- }
+    padding: 5px; 
+  }
+  span{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
 `;

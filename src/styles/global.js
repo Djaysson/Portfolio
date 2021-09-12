@@ -29,5 +29,23 @@ export default createGlobalStyle`
      text-decoration: none;
   }
  
- 
+  @media(min-width: 769px) and (max-width: 1024px){
+    body,input, button,label,textarea{
+      font: 12px 'Roboto',sans-serif;
+    }
+    #root {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media(min-width: 300px) and (max-width: 768px){
+    body,input, button,label,textarea{
+      font: 12px 'Roboto',sans-serif;
+    }
+    #root {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
 `;

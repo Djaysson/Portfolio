@@ -25,7 +25,6 @@ margin-top: 80px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   h1{
   font-size: 30px;
   font-weight: 500;
@@ -43,7 +42,6 @@ export const Button = styled(Link)`
   margin-top: 10px;
   transition: transform 2s;
   z-index: 1;
-
   strong{
     border: none;
     background-color: ${props => props.theme.secondary};
@@ -54,12 +52,12 @@ export const Button = styled(Link)`
       font-weight: 500;
       padding: 10px;
       svg{
-       margin: auto;
+        margin: auto;
         animation: movingAnimation 2s  infinite;
       }
     &:hover{
       background: ${props => props.theme.primary};
-  }
+    }
   }
   &:hover{
       -ms-transform: scale(1.1); 
@@ -75,7 +73,6 @@ export const Button = styled(Link)`
     100% {
       opacity: 0;
       transform: translateY(20px);
-   
     }
   }
 `;
