@@ -1,5 +1,25 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
+    /* Works on Firefox */
+  * {
+      scrollbar-width: 5px;
+      scrollbar-color: #4717F3 rgba(0, 0, 0, 0.7) ; 
+    }
+    
+    /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+      width: 5px;
+    }
+    
+  *::-webkit-scrollbar-track {
+      background:${(props) => props.theme.scrollbarDarkColor};
+    }
+    
+  *::-webkit-scrollbar-thumb {
+      background-color: ${(props) => props.theme.scrollbarLighterColor};
+      border-radius: 5px;     
+  }
+
   *{ 
       margin: 0px;
       padding: 0px;
@@ -7,13 +27,13 @@ export default createGlobalStyle`
       box-sizing: border-box;
   }
   body{
-    background: ${props => props.theme.background} none repeat scroll 0% 0%;
+    background: ${(props) => props.theme.background} none repeat;
       height: 100vh;
       -webkit-font-smoothing: antialiased;
   }
   body,input, button,label,textarea{
       font: 16px 'Roboto',sans-serif;
-      color: ${props => props.theme.font};
+      color: ${(props) => props.theme.font};
   }
   #root {
       width: 100vw;
