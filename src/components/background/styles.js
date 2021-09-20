@@ -12,8 +12,8 @@ export const Wrapper = styled.div`
   position: relative;
 
   div {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     box-shadow: 0 0 40px ${(props) => props.theme.primary};
     position: absolute;
     img {
@@ -89,8 +89,8 @@ export const Wrapper = styled.div`
   @media (min-width: 768px) and (max-width: 1024px) {
     overflow-x: hidden;
     div {
-      width: 28px;
-      height: 28px;
+      width: 30px;
+      height: 30px;
       box-shadow: 0 0 40px ${(props) => props.theme.primary};
       position: absolute;
       img {
@@ -99,6 +99,57 @@ export const Wrapper = styled.div`
         background: ${(props) => props.theme.secondary};
         border-radius: 5px;
       }
+    }
+
+    div:nth-child(1) {
+      top: 35%;
+      left: 10%;
+      animation: square 5s linear infinite;
+    }
+    div:nth-child(2) {
+      top: 45%;
+      left: 60%;
+      animation: square 7s linear infinite;
+    }
+    div:nth-child(3) {
+      top: 70%;
+      left: 5%;
+      animation: square 9s linear infinite;
+    }
+    div:nth-child(4) {
+      top: 60%;
+      left: 40%;
+      animation: square 11s linear infinite;
+    }
+    div:nth-child(5) {
+      top: 96%;
+      left: 60%;
+      animation: square 15s linear infinite;
+    }
+    div:nth-child(6) {
+      top: 96%;
+      left: 20%;
+      animation: square 13s linear infinite;
+    }
+    div:nth-child(7) {
+      top: 10%;
+      left: 20%;
+      animation: square 12s linear infinite;
+    }
+    div:nth-child(8) {
+      top: 20%;
+      left: 85%;
+      animation: square 8s linear infinite;
+    }
+    div:nth-child(9) {
+      top: 60%;
+      left: 80%;
+      animation: square 9s linear infinite;
+    }
+    div:nth-child(10) {
+      top: 90%;
+      left: 94%;
+      animation: square 7s linear infinite;
     }
   }
   @media (min-width: 300px) and (max-width: 767px) {

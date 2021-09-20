@@ -87,7 +87,7 @@ export const Section = styled.section`
       font-weight: 500;
     }
     strong {
-      font-size: 42px;
+      font-size: 55px;
       font-weight: 700;
       b {
         color: ${(props) => props.theme.secondary};
@@ -110,6 +110,7 @@ export const Section = styled.section`
   }
   @media (min-width: 300px) and (max-width: 767px) {
     margin-top: 100px;
+
     h1 {
       font-size: 16px;
       font-weight: 500;
@@ -131,7 +132,7 @@ export const Button = styled(Link)`
     border: none;
     background-color: ${(props) => props.theme.secondary};
     box-shadow: 0px 0px 15px ${(props) => props.theme.darkTransparent};
-    border-radius: 15px;
+    border-radius: 10px;
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
@@ -172,6 +173,7 @@ export const Button = styled(Link)`
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-top: 20px;
+    z-index: 1;
     strong {
       font-size: 16px;
       padding: 15px;

@@ -130,6 +130,7 @@ export const NavContainer = styled.nav`
 export const NavMobile = styled.header`
   display: none;
   padding: 40px 0px;
+  position: fixed;
   @media (min-width: 769px) and (max-width: 1024px) {
     width: 100%;
     height: 14vh;
@@ -204,7 +205,3 @@ export const Footer = styled.footer`
     }
   }
 `;
-
-//tem que criar esse midia query tambem
-//@media(min-width: 769px) and (max-width: 1024px)
-//obs: tem que colocar acima dos outro midiaquery ok

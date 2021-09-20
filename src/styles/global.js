@@ -25,6 +25,7 @@ export default createGlobalStyle`
       padding: 0px;
       outline: 0px;
       box-sizing: border-box;
+      scroll-behavior: smooth;
   }
   body{
     background: ${(props) => props.theme.background} none repeat;
