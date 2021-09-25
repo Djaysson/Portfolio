@@ -59,18 +59,18 @@ export const Section = styled.section`
     margin-left: 20px;
     h1 {
       margin-bottom: 20px;
-      font-size: 25px;
+      font-size: 1.8em;
       font-weight: 700;
       animation: bounceInDown;
       animation-duration: 8s;
     }
     p {
-      font-size: 16px;
+      font-size: 1em;
       text-indent: 10px;
       line-height: 20px;
       text-align: left;
       font-weight: 500;
-      margin-bottom: 15px;
+      margin: 25px 0px;
     }
     p:nth-child(2) {
       animation: bounceInDown;
@@ -107,17 +107,17 @@ export const Section = styled.section`
       margin: 0 auto;
       h1 {
         margin-bottom: 10px;
-        font-size: 18px;
+        font-size: 1.5em;
         font-weight: 700;
         animation: fadeInLeft;
         animation-duration: 2s;
       }
       p {
-        font-size: 15px;
+        font-size: 1.3em;
         text-indent: 10px;
         line-height: 20px;
         text-align: left;
-        margin-bottom: 10px;
+        margin: 10px 0px;
       }
       p:nth-child(2) {
         animation: fadeInLeft;
@@ -144,7 +144,7 @@ export const Aside = styled.aside`
   ul {
     list-style: none;
     li {
-      font-size: 16px;
+      font-size: 1em;
       font-weight: 500;
       margin-bottom: 30px;
       border-bottom: 1px solid ${(props) => props.theme.secondary};
@@ -183,7 +183,7 @@ export const Aside = styled.aside`
       margin-top: 20px;
       list-style: none;
       li {
-        font-size: 16px;
+        font-size: 1.3em;
         margin-bottom: 20px;
       }
       li:nth-child(1) {
@@ -218,7 +218,7 @@ export const Button = styled.a`
     box-shadow: 0px 0px 15px ${(props) => props.theme.darkTransparent};
     border-radius: 10px;
     color: ${(props) => props.theme.font};
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 500;
     padding: 5px;
     margin: 5px;
@@ -233,11 +233,21 @@ export const Button = styled.a`
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    strong {
+      width: 34vw;
+      border-radius: 10px;
+      font-size: 1.1em;
+      padding: 7px;
+      margin: 7px;
+    }
+  }
+
   @media (min-width: 300px) and (max-width: 767px) {
     strong {
       width: 34vw;
       border-radius: 10px;
-      font-size: 16px;
+      font-size: 1em;
       padding: 7px;
       margin: 7px;
       animation: fadeInLeft;

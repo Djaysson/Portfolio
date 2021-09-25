@@ -52,7 +52,7 @@ export default createGlobalStyle`
  
   @media(min-width: 769px) and (max-width: 1024px){
     body,input, button,label,textarea{
-      font: 12px 'Roboto',sans-serif;
+      font: 16px 'Roboto',sans-serif;
     }
     #root {
       display: flex;

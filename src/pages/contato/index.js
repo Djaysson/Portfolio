@@ -121,7 +121,7 @@ function Contato() {
             <Button id="button" type="submit" value="Enviar" />
           </ContainerForm>
         </Section>
-        {/* <Footer /> */}
+        <Footer />
       </Container>
     </>
   );

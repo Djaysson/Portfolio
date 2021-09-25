@@ -1,23 +1,33 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.footer`
- position: fixed;
- margin-left: -130px;
-  width: 100%;
-  bottom:0px;
-  height: 4vh;
-h2{
+  position: relative;
+  bottom: 0px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  font-style: italic;
-  margin-top: 5px;
- 
-  img{
-    padding-left: 2px;
-    width: 30px;
+  span {
+    font-size: 1em;
+    font-weight: 400;
+    img {
+      width: 2vw;
+    }
   }
-}
+  @media (min-width: 768px) and (max-width: 1024px) {
+    span {
+      font-size: 1em;
+      img {
+        width: 2.5vw;
+      }
+    }
+  }
+  @media (min-width: 300px) and (max-width: 767px) {
+    span {
+      font-size: 0.9em;
+      img {
+        width: 3.5vw;
+      }
+    }
+  }
 `;
-

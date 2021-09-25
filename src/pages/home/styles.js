@@ -13,21 +13,19 @@ export const Container = styled.div`
     filter: drop-shadow(2px 2px 6px ${(props) => props.theme.darkTransparent});
     margin: auto;
     width: 55vw;
-    height: 55vh;
-    top: -2px;
+    height: 50vh;
+    bottom: 0px;
     animation: zoomIn;
     animation-duration: 4s;
   }
   @media (min-width: 1025px) and (max-width: 1440px) {
     overflow-x: hidden;
-
     img:nth-child(3) {
       filter: drop-shadow(2px 2px 4px ${(props) => props.theme.secondary});
       margin: auto;
       width: 55vw;
       height: 50vh;
-      top: 10px;
-      padding: 10px 0px;
+      padding-top: 20px;
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -38,10 +36,9 @@ export const Container = styled.div`
     img:nth-child(3) {
       filter: drop-shadow(2px 2px 4px ${(props) => props.theme.secondary});
       margin: auto;
-      width: 90vw;
+      width: 70vw;
       height: 50vh;
-      top: 20px;
-      padding: 5px 0px;
+      bottom: 0px;
     }
   }
   @media (min-width: 300px) and (max-width: 767px) {
@@ -53,8 +50,8 @@ export const Container = styled.div`
     img:nth-child(3) {
       filter: drop-shadow(2px 2px 4px ${(props) => props.theme.secondary});
       margin: auto;
-      width: 90vw;
-      height: 45vh;
+      width: 80vw;
+      height: 50vh;
       top: 10px;
       padding: 10px 0px;
     }
@@ -67,27 +64,27 @@ export const Section = styled.section`
   align-items: center;
   flex-direction: column;
   h1 {
-    font-size: 30px;
+    font-size: 1.6em;
     font-weight: 500;
   }
   strong {
-    font-size: 60px;
+    font-size: 4em;
     font-weight: 700;
     b {
-      padding: 10px;
+      padding: 0px 10px;
       color: ${(props) => props.theme.secondary};
     }
   }
   @media (min-width: 1025px) and (max-width: 1440px) {
     overflow-y: hidden;
     overflow-x: hidden;
-    margin-top: 80px;
+    margin-top: 70px;
     h1 {
-      font-size: 20px;
+      font-size: 1.6em;
       font-weight: 500;
     }
     strong {
-      font-size: 55px;
+      font-size: 3.5em;
       font-weight: 700;
       b {
         color: ${(props) => props.theme.secondary};
@@ -97,11 +94,11 @@ export const Section = styled.section`
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-top: 100px;
     h1 {
-      font-size: 20px;
+      font-size: 1.5em;
       font-weight: 500;
     }
     strong {
-      font-size: 45px;
+      font-size: 3.4em;
       font-weight: 700;
       b {
         color: ${(props) => props.theme.secondary};
@@ -112,11 +109,11 @@ export const Section = styled.section`
     margin-top: 100px;
 
     h1 {
-      font-size: 16px;
+      font-size: 1.4em;
       font-weight: 500;
     }
     strong {
-      font-size: 21px;
+      font-size: 1.7em;
       font-weight: 700;
       b {
         color: ${(props) => props.theme.secondary};
@@ -132,11 +129,11 @@ export const Button = styled(Link)`
     border: none;
     background-color: ${(props) => props.theme.secondary};
     box-shadow: 0px 0px 15px ${(props) => props.theme.darkTransparent};
-    border-radius: 10px;
+    border-radius: 15px;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.3em;
     font-weight: 500;
-    padding: 10px;
+    padding: 13px;
     svg {
       margin: auto;
       animation: movingAnimation 2s linear infinite;
@@ -164,19 +161,19 @@ export const Button = styled(Link)`
     margin: 20px 0px;
     z-index: 1;
     strong {
-      font-size: 18px;
-      padding: 15px;
+      font-size: 1.2em;
+      padding: 12px;
       svg:nth-child(1) {
         height: 23px;
       }
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    margin-top: 20px;
-    z-index: 1;
+    margin: 20px 0;
+    z-index: 0;
     strong {
-      font-size: 16px;
-      padding: 15px;
+      font-size: 1.1em;
+      padding: 11px;
       svg:nth-child(1) {
         height: 22px;
       }
@@ -184,11 +181,11 @@ export const Button = styled(Link)`
   }
 
   @media (min-width: 300px) and (max-width: 767px) {
-    margin-top: 15px;
+    margin: 15px 0;
     cursor: pointer;
     strong {
-      font-size: 14px;
-      padding: 8px;
+      font-size: 1em;
+      padding: 10px;
       svg:nth-child(1) {
         height: 20px;
       }

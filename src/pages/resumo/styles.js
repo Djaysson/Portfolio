@@ -23,40 +23,42 @@ export const Section = styled.section`
   animation-duration: 3s;
 
   h1 {
-    font-size: 25px;
+    font-size: 1.6em;
     font-weight: 700;
+    padding-bottom: 10px;
   }
   div {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
-    padding: 10px 0px;
-    grid-gap: 15px;
+    grid-gap: 10px;
     z-index: 1;
     div {
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
       border-bottom: 5px solid ${(props) => props.theme.secondary};
       background: ${(props) => props.theme.itemBackgroundColor};
       box-shadow: 0px 0px 15px ${(props) => props.theme.darkTransparent};
       border-radius: 10px;
-      width: 400px;
-      height: 168px;
+      width: 32vw;
+      height: 170px;
       span {
         background-color: ${(props) => props.theme.secondary};
         text-align: center;
+        box-sizing: border-box;
         padding: 4px 0px;
         font-weight: 500;
       }
       p {
         font-weight: 700;
         padding-left: 15px;
-        margin: -1px 0px;
+        line-height: 20px;
       }
       p:nth-child(2) {
-        font-size: 18.5px;
+        font-size: 1.2em;
       }
       p:nth-child(3) {
-        font-size: 16.5px;
+        font-size: 1em;
         opacity: 0.7;
       }
       a {
@@ -79,15 +81,17 @@ export const Section = styled.section`
     }
   }
   @media (min-width: 1025px) and (max-width: 1440px) {
+    h1 {
+      padding-bottom: 10px;
+    }
     div {
       display: grid;
-      grid-template-columns: repeat(2, 0.5fr);
-      padding: 10px 0px;
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
       z-index: 1;
       div {
-        width: 385px;
-        height: 168px;
+        width: 32vw;
+        height: 170px;
       }
     }
   }
@@ -98,19 +102,19 @@ export const Section = styled.section`
     overflow-y: initial;
     overflow-x: hidden;
     h1 {
-      font-size: 20px;
+      font-size: 1.4em;
+      padding-bottom: 10px;
     }
     div {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      padding: 10px 0px;
-      margin: 0 -5px;
-      grid-gap: 2em;
+      grid-gap: 10px;
       z-index: 0;
 
       div {
-        width: 360px;
+        width: 40vw;
         height: 170px;
+
         span {
           text-align: center;
           padding: 4px 0px;
@@ -120,10 +124,10 @@ export const Section = styled.section`
           padding-left: 15px;
         }
         p:nth-child(2) {
-          font-size: 17.5px;
+          font-size: 1.1em;
         }
         p:nth-child(3) {
-          font-size: 14.5px;
+          font-size: 0.9em;
         }
         a {
           position: relative;
@@ -131,7 +135,7 @@ export const Section = styled.section`
         img {
           transition: transform 1s;
           padding-left: 15px;
-          margin: -5px 0px;
+          margin: 0px;
           width: 60px;
           height: 25px;
         }
@@ -142,17 +146,17 @@ export const Section = styled.section`
     animation: fadeInLeft;
     animation-duration: 2s;
     h1 {
-      font-size: 18px;
+      font-size: 1.5em;
+      padding-bottom: 10px;
     }
     div {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      padding: 10px 0px;
       grid-gap: 10px;
       z-index: 0;
 
       div {
-        width: 280px;
+        width: 87vw;
         height: 170px;
         span {
           text-align: center;
@@ -161,13 +165,12 @@ export const Section = styled.section`
         p {
           font-weight: 700;
           padding-left: 15px;
-          margin: 2px 0px;
         }
         p:nth-child(2) {
-          font-size: 17.5px;
+          font-size: 1.4em;
         }
         p:nth-child(3) {
-          font-size: 14.5px;
+          font-size: 1.2em;
         }
         a {
           position: relative;
@@ -206,12 +209,11 @@ export const Skills = styled.footer`
   padding: 10px 0px;
   animation: bounceInDown;
   animation-duration: 2s;
-
   div:first-child {
     z-index: 1;
     h1 {
       text-align: center;
-      font-size: 25px;
+      font-size: 1.6em;
       padding: 10px 0px;
       color: ${(props) => props.theme.font};
     }
@@ -230,7 +232,7 @@ export const Skills = styled.footer`
       background: ${(props) => props.theme.itemBackgroundColor};
       box-shadow: 0px 0px 15px ${(props) => props.theme.darkTransparent};
       border-radius: 15px;
-      width: 130px;
+      width: 12vw;
       height: 60px;
       padding: 5px;
       &:hover {
@@ -241,7 +243,7 @@ export const Skills = styled.footer`
       }
     }
     span {
-      font-size: 12px;
+      font-size: 0.7em;
       font-weight: 500;
       text-align: center;
     }
@@ -251,7 +253,7 @@ export const Skills = styled.footer`
     h1 {
       text-align: center;
       padding: 10px 0px;
-      font-size: 25px;
+      font-size: 1.6em;
       color: ${(props) => props.theme.font};
     }
     ul {
@@ -269,7 +271,7 @@ export const Skills = styled.footer`
       background: ${(props) => props.theme.itemBackgroundColor};
       box-shadow: 0px 0px 15px ${(props) => props.theme.darkTransparent};
       border-radius: 15px;
-      width: 130px;
+      width: 12vw;
       height: 60px;
       padding: 5px;
       &:hover {
@@ -280,34 +282,44 @@ export const Skills = styled.footer`
       }
     }
     span {
-      font-size: 12px;
+      font-size: 0.7em;
       font-weight: 500;
       text-align: center;
     }
   }
   @media (min-width: 1025px) and (max-width: 1440px) {
+    width: 75vw;
+    margin: 0 auto;
     div {
       padding: 0px 10px;
     }
     div:first-child {
       z-index: 1;
+      h1 {
+        font-size: 1.6em;
+        padding: 5px 0px;
+      }
       ul {
         grid-gap: 0.7em;
       }
       li {
-        width: 120px;
-        height: 60px;
+        width: 9vw;
+        height: 50px;
         padding: 5px;
       }
     }
     div:last-child {
       z-index: 1;
+      h1 {
+        font-size: 1.6em;
+        padding: 5px 0px;
+      }
       ul {
         grid-gap: 0.7em;
       }
       li {
-        width: 120px;
-        height: 60px;
+        width: 9vw;
+        height: 50px;
         padding: 5px;
       }
     }
@@ -326,7 +338,7 @@ export const Skills = styled.footer`
       z-index: 0;
 
       h1 {
-        font-size: 20px;
+        font-size: 1.3em;
         padding: 20px 0px;
       }
       ul {
@@ -335,17 +347,17 @@ export const Skills = styled.footer`
         grid-gap: 2em;
       }
       li {
-        width: 300px;
+        width: 39vw;
         height: 50px;
       }
       span {
-        font-size: 11.5px;
+        font-size: 0.9em;
       }
     }
     div:last-child {
       z-index: 0;
       h1 {
-        font-size: 20px;
+        font-size: 1.3em;
         padding: 20px 0px;
       }
       ul {
@@ -354,12 +366,12 @@ export const Skills = styled.footer`
         grid-gap: 1em;
       }
       li {
-        width: 200px;
+        width: 26vw;
         height: 50px;
       }
 
       span {
-        font-size: 12px;
+        font-size: 0.9em;
       }
     }
   }
@@ -378,26 +390,26 @@ export const Skills = styled.footer`
       z-index: 0;
       h1 {
         text-align: center;
-        font-size: 18.5px;
+        font-size: 1.5em;
         padding: 20px 0px;
       }
       ul {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2em 3em;
+        grid-gap: 20px;
       }
       li {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 120px;
+        width: 40vw;
         height: 50px;
         padding: 5px;
       }
       span {
-        font-size: 11px;
+        font-size: 1em;
         font-weight: 500;
         text-align: center;
       }
@@ -406,24 +418,24 @@ export const Skills = styled.footer`
       z-index: 0;
       h1 {
         padding: 20px 0px;
-        font-size: 18.5px;
+        font-size: 1.5em;
       }
       ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2em 3em;
+        grid-gap: 20px;
       }
       li {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 120px;
+        width: 40vw;
         height: 50px;
         padding: 5px;
       }
       span {
-        font-size: 11px;
+        font-size: 1em;
       }
     }
   }

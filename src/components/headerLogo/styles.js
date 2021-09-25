@@ -4,14 +4,14 @@ export const Container = styled.header`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 10px;
+  padding: 10px 7px;
   img {
     transition: transform 0.2s;
     filter: drop-shadow(
       1px 2px 3px ${(props) => props.theme.lighterWhiteTransparent}
     );
-    height: 8vh;
-    width: 7vw;
+    width: 6vw;
+    height: 60px;
     &:hover {
       -ms-transform: scale(1.1);
       -webkit-transform: scale(1.1);
