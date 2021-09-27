@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.header`
-  width: 300px;
+  width: 23vw;
   height: 100vh;
   background: ${(props) => props.theme.background};
   box-shadow: 0 0 0.5em ${(props) => props.theme.darkTransparent};
@@ -17,19 +17,20 @@ export const Container = styled.header`
     flex-direction: column;
     align-items: center;
     img {
-      margin-top: -70px;
-      width: 237px;
-      height: 260px;
+      margin-top: -50px;
+      width: 18vw;
+      height: 270px;
     }
     strong {
-      margin-top: 10px;
-      font-size: 25px;
+      padding-top: 10px;
+      font-size: 1.3em;
+      font-weight: 700;
     }
   }
 
   @media (min-width: 769px) and (max-width: 1024px) {
-    width: 100%;
-    height: 14vh;
+    width: 100vw;
+    height: 100px;
     overflow-y: hidden;
 
     div:nth-child(1) {
@@ -40,8 +41,8 @@ export const Container = styled.header`
     }
   }
   @media (min-width: 300px) and (max-width: 768px) {
-    width: 100%;
-    height: 12vh;
+    width: 100vw;
+    height: 80px;
 
     overflow-y: hidden;
     div:nth-child(1) {
@@ -63,7 +64,7 @@ export const NavContainer = styled.nav`
       font-weight: bold;
     }
     li {
-      font-size: 18px;
+      font-size: 1em;
       padding: 20px;
       text-align: center;
     }
@@ -75,7 +76,7 @@ export const NavContainer = styled.nav`
     align-items: flex-start;
     nav {
       height: 100vh;
-      width: 30%;
+      width: 32vw;
       background: ${(props) => props.theme.background};
       box-shadow: 0 0 0.5em ${(props) => props.theme.darkTransparent};
       transform: translateX(-9999px);
@@ -86,12 +87,14 @@ export const NavContainer = styled.nav`
       }
       ul {
         position: relative;
-        top: 15vh;
+        top: 92px;
       }
       li {
-        font-size: 18px;
-        padding: 25px;
+        font-size: 1em;
+        padding: 35px 20px;
         text-align: center;
+        border-bottom: 0.5px solid ${(props) => props.theme.darkTransparent};
+        box-shadow: 0 0 4px ${(props) => props.theme.darkTransparent};
       }
     }
   }
@@ -103,7 +106,7 @@ export const NavContainer = styled.nav`
 
     nav {
       height: 100vh;
-      width: 100%;
+      width: 100vw;
       background: ${(props) => props.theme.background};
       box-shadow: 0 0 0.5em ${(props) => props.theme.darkTransparent};
       transform: translateY(-9999px);
@@ -116,12 +119,14 @@ export const NavContainer = styled.nav`
       }
       ul {
         position: relative;
-        top: 20vh;
+        top: 90px;
       }
       li {
-        font-size: 16px;
-        padding: 20px;
+        font-size: 1.4em;
+        padding: 30px 20px;
         text-align: center;
+        border-bottom: 0.5px solid ${(props) => props.theme.darkTransparent};
+        box-shadow: 0 0 4px ${(props) => props.theme.darkTransparent};
       }
     }
   }
@@ -129,11 +134,11 @@ export const NavContainer = styled.nav`
 
 export const NavMobile = styled.header`
   display: none;
-  padding: 40px 0px;
+  padding: 30px 0px;
   position: fixed;
   @media (min-width: 769px) and (max-width: 1024px) {
     width: 100%;
-    height: 14vh;
+    height: 90px;
     background: ${(props) => props.theme.background};
     display: flex;
     flex-direction: row;
@@ -154,7 +159,7 @@ export const NavMobile = styled.header`
     }
   }
   @media (min-width: 300px) and (max-width: 768px) {
-    width: 100%;
+    width: 100vw;
     height: 12vh;
     background: ${(props) => props.theme.background};
     display: flex;
@@ -163,15 +168,14 @@ export const NavMobile = styled.header`
     justify-content: space-between;
     z-index: 1;
     button {
-      margin-top: 10px;
       border: none;
       background: none;
-      margin-left: 10px;
+      padding-left: 10px;
     }
     img {
-      width: 60px;
-      height: 45px;
-      margin-right: 10px;
+      width: 20vw;
+      height: 47px;
+      padding-right: 10px;
       object-fit: contain;
     }
   }
@@ -194,11 +198,10 @@ export const Footer = styled.footer`
     list-style: none;
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 0 auto;
   }
   li {
-    padding-right: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
     transition: opacity color 0.2s;
     &:hover {
       opacity: 0.4;
