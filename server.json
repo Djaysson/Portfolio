@@ -41,6 +41,27 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg6.png?alt=media&token=c97c0d65-9c0f-44f5-8ab7-f383a523d8b6",
       "linkDemo": "https://djaysson.github.io/workshop/",
       "linkGithub": "https://github.com/Djaysson/workshop"
+    },
+    {
+      "id": 7,
+      "title": "Jogo da Memoria",
+      "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg5.png?alt=media&token=1079e494-0b0b-4dd5-9590-f4a709a1bd61",
+      "linkDemo": "https://djaysson.github.io/Jogo-da-Memoria/",
+      "linkGithub": "https://github.com/Djaysson/Jogo-da-Memoria"
+    },
+    {
+      "id": 8,
+      "title": "Workshop",
+      "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg6.png?alt=media&token=c97c0d65-9c0f-44f5-8ab7-f383a523d8b6",
+      "linkDemo": "https://djaysson.github.io/workshop/",
+      "linkGithub": "https://github.com/Djaysson/workshop"
+    },
+    {
+      "id": 9,
+      "title": "Convertmymoney",
+      "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg4.png?alt=media&token=7dc61bd8-43d4-4751-9042-8c52bf188ffd",
+      "linkDemo": "https://convertmymoney.vercel.app",
+      "linkGithub": "https://github.com/Djaysson/ConvertMyMoney"
     }
   ]
 }
