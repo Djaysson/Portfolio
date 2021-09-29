@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderLogo from "../../components/headerLogo/index";
+import emailjs from "emailjs-com";
 import {
   Container,
   Section,
@@ -22,6 +23,25 @@ import {
 } from "react-icons/fa";
 
 function Contato() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        `${process.env.REACT_APP_SERVICE_ID}`,
+        `${process.env.REACT_APP_TEMPLATE_ID}`,
+        e.target,
+        `${process.env.REACT_APP_USER_ID}`
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     <>
       <AnimatedBackground />
@@ -94,31 +114,23 @@ function Contato() {
               </ul>
             </div>
           </ContainerContato>
-          <ContainerForm action="">
+          <ContainerForm onSubmit={sendEmail}>
             <label>Envie uma mensagem</label>
             <div>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nome"
-                required
-              />
+              <input type="text" name="user_name" placeholder="Nome" required />
               <input
                 type="email"
-                id="email"
-                name="email"
+                name="user_email"
                 placeholder="Email"
                 required
               />
             </div>
             <textarea
               name="message"
-              id="message"
               placeholder="Conte-me mais sobre sua necessidade....."
               required
             />
-            <Button id="button" type="submit" value="Enviar" />
+            <Button type="submit" value="Enviar" />
           </ContainerForm>
         </Section>
         <Footer />
