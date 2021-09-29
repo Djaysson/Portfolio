@@ -1,4 +1,5 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import theme from "./styles/theme/themeColor";
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Routes />
         <GlobalStyle />
+        <ToastContainer />
       </ThemeProvider>
     </BrowserRouter>
   );

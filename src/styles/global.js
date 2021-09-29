@@ -1,3 +1,5 @@
+import "react-toastify/dist/ReactToastify.css";
+
 import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
     /* Works on Firefox */
@@ -40,8 +42,10 @@ export default createGlobalStyle`
       width: 100vw;
       height: 100vh;
       display: flex;
-      flex-direction: row;
-    
+      flex-direction: row;  
+      --toastify-color-progress-success:  ${(props) => props.theme.secondary};
+      --toastify-font-family:'Roboto', sans-serif;
+      
   }
   button{
       cursor: pointer;

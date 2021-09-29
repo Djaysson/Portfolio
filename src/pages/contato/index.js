@@ -1,6 +1,8 @@
 import React from "react";
 import HeaderLogo from "../../components/headerLogo/index";
 import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
+
 import {
   Container,
   Section,
@@ -34,11 +36,33 @@ function Contato() {
         `${process.env.REACT_APP_USER_ID}`
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          toast.success("🧑‍💻 Mensagem enviada com sucesso", {
+            theme: "dark",
+            icon: false,
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+          });
+          setInterval(() => {
+            document.location.reload(true);
+          }, 4000);
         },
         (error) => {
-          console.log(error.text);
+          if (error) {
+            toast.error(`Error no envio da mensagem`, {
+              theme: "dark",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: false,
+              draggable: false,
+              progress: undefined,
+            });
+          }
         }
       );
   }
