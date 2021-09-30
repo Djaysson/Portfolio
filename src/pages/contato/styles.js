@@ -6,6 +6,7 @@ export const Container = styled.div`
   animation: bounceInDown;
   animation-duration: 2s;
   overflow: hidden;
+  overflow-y: initial;
 
   @media (min-width: 768px) and (max-width: 1024px) {
     overflow-y: initial;
@@ -18,7 +19,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 180px;
+  margin-top: 172px;
   padding: 0px 30px;
   @media (min-width: 768px) and (max-width: 1024px) {
     overflow-y: initial;
@@ -387,7 +388,7 @@ export const ContainerForm = styled.form`
 export const Button = styled.input`
   width: 25vw;
   height: 40px;
-  margin: 20px auto;
+  margin: 15px auto;
   border: none;
   border-radius: 10px;
   font-weight: 500;

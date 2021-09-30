@@ -21,7 +21,7 @@ import {
   FaInstagramSquare,
   FaLinkedin,
   FaGithubSquare,
-  FaYoutubeSquare,
+  FaFacebookSquare,
 } from "react-icons/fa";
 
 function Contato() {
@@ -130,9 +130,9 @@ function Contato() {
                 <li>
                   <a
                     target="blank"
-                    href="https://www.youtube.com/channel/UCAkanB0GDpy5UfRQnU2zbBg"
+                    href="https://www.facebook.com/djayson.alves"
                   >
-                    <FaYoutubeSquare size={35} color="#4545E5" />
+                    <FaFacebookSquare size={35} color="#4545E5" />
                   </a>
                 </li>
               </ul>

@@ -4,9 +4,19 @@ import HeaderLogo from "../../components/headerLogo/index";
 import LogoEstacio from "../../assets/logos/estacio.png";
 import LogoFreeCode from "../../assets/logos/free.png";
 import LogoDigital from "../../assets/logos/digital.png";
-import { SiRedux } from "react-icons/si";
 import TitlePage from "../../components/titlePage/index";
 import AnimatedBackground from "../../components/background/index";
+import {
+  SiRedux,
+  SiStyledComponents,
+  SiJquery,
+  SiSass,
+  SiMaterialUi,
+  SiWebpack,
+  SiNodeDotJs,
+} from "react-icons/si";
+import { VscCompareChanges, VscEditorLayout } from "react-icons/vsc";
+import { RiLayoutMasonryFill } from "react-icons/ri";
 
 import {
   FaHtml5,
@@ -21,7 +31,10 @@ import {
   FaTools,
   FaMicrophone,
   FaLightbulb,
-  FaNode,
+  FaBrain,
+  FaBalanceScale,
+  FaUsersCog,
+  FaCogs,
 } from "react-icons/fa";
 
 function Resumo() {
@@ -108,6 +121,22 @@ function Resumo() {
                 <FaTools size={20} />
                 <span>Persistência</span>
               </li>
+              <li>
+                <FaBrain size={20} />
+                <span>Criatividade</span>
+              </li>
+              <li>
+                <FaBalanceScale size={20} />
+                <span>Ética</span>
+              </li>
+              <li>
+                <FaUsersCog size={20} />
+                <span>Flexibilidade</span>
+              </li>
+              <li>
+                <VscCompareChanges size={20} />
+                <span>Resiliência</span>
+              </li>
             </ul>
           </div>
           <div>
@@ -142,8 +171,40 @@ function Resumo() {
                 <span>Git</span>
               </li>
               <li>
-                <FaNode size={20} />
-                <span>Node</span>
+                <SiNodeDotJs size={20} />
+                <span>Noções de node</span>
+              </li>
+              <li>
+                <SiStyledComponents size={20} />
+                <span>Styled-components</span>
+              </li>
+              <li>
+                <SiJquery size={20} />
+                <span>Jquery</span>
+              </li>
+              <li>
+                <SiSass size={20} />
+                <span>Sass</span>
+              </li>
+              <li>
+                <RiLayoutMasonryFill size={20} />
+                <span>Noções de UX/UI</span>
+              </li>
+              <li>
+                <VscEditorLayout size={20} />
+                <span>Layouts responsivos</span>
+              </li>
+              <li>
+                <SiMaterialUi size={20} />
+                <span>Material-UI</span>
+              </li>
+              <li>
+                <FaCogs size={20} />
+                <span>Consumo de API</span>
+              </li>
+              <li>
+                <SiWebpack size={20} />
+                <span>WebPack</span>
               </li>
             </ul>
           </div>

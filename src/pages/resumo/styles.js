@@ -6,6 +6,7 @@ export const Container = styled.div`
   animation: bounceInDown;
   animation-duration: 2s;
   overflow: hidden;
+  overflow-y: initial;
   @media (min-width: 768px) and (max-width: 1024px) {
     overflow-y: initial;
   }
