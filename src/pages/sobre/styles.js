@@ -74,13 +74,17 @@ export const Section = styled.section`
     }
     p:nth-child(2) {
       animation: bounceInDown;
-      animation-duration: 6s;
+      animation-duration: 7s;
     }
     p:nth-child(3) {
       animation: bounceInDown;
-      animation-duration: 4s;
+      animation-duration: 6s;
     }
     p:nth-child(4) {
+      animation: bounceInDown;
+      animation-duration: 4s;
+    }
+    p:nth-child(5) {
       animation: bounceInDown;
       animation-duration: 2s;
     }
@@ -121,15 +125,19 @@ export const Section = styled.section`
       }
       p:nth-child(2) {
         animation: fadeInLeft;
-        animation-duration: 1s;
+        animation-duration: 2s;
       }
       p:nth-child(3) {
         animation: fadeInLeft;
-        animation-duration: 2s;
+        animation-duration: 3s;
       }
       p:nth-child(4) {
         animation: fadeInLeft;
-        animation-duration: 3s;
+        animation-duration: 4s;
+      }
+      p:nth-child(5) {
+        animation: fadeInLeft;
+        animation-duration: 5s;
       }
       strong {
         color: ${(props) => props.theme.secondary};
@@ -188,15 +196,15 @@ export const Aside = styled.aside`
       }
       li:nth-child(1) {
         animation: fadeInLeft;
-        animation-duration: 1s;
+        animation-duration: 5s;
       }
       li:nth-child(2) {
         animation: fadeInLeft;
-        animation-duration: 2s;
+        animation-duration: 6s;
       }
       li:nth-child(3) {
         animation: fadeInLeft;
-        animation-duration: 3s;
+        animation-duration: 7s;
       }
       span {
         padding-left: 4px;

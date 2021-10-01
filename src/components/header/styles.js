@@ -152,8 +152,8 @@ export const NavMobile = styled.header`
       margin-left: 10px;
     }
     img {
-      width: 100px;
-      height: 45px;
+      width: 7vw;
+      height: 40px;
       margin-right: 10px;
       object-fit: contain;
     }
@@ -173,8 +173,8 @@ export const NavMobile = styled.header`
       padding-left: 10px;
     }
     img {
-      width: 20vw;
-      height: 47px;
+      width: 18vw;
+      height: 40px;
       padding-right: 10px;
       object-fit: contain;
     }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaLinkedin, FaGithubSquare, FaYoutubeSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
 import ImgPerfil from "../../assets/images/perfil.png";
 import { Container, NavContainer, NavMobile, Links, Footer } from "./styles";
 import { MdMenu, MdClose } from "react-icons/md";
@@ -83,11 +83,11 @@ function Header() {
           </li>
           <li>
             <a
-              href="https://www.youtube.com/channel/UCAkanB0GDpy5UfRQnU2zbBg"
+              href="https://instagram.com/djayson_alves"
               target="blank"
               rel="noopener noreferrer"
             >
-              <FaYoutubeSquare size={30} color="#FFF" />
+              <FaInstagramSquare size={30} color="#FFF" />
             </a>
           </li>
         </ul>

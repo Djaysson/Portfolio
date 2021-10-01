@@ -15,18 +15,25 @@ function Sobre() {
         <Section>
           <div>
             <h1>
-              Eu sou <strong>Djayson Rodrigues</strong>, um Frontend Developer
+              Eu me chamo <strong>Djayson Rodrigues</strong>
             </h1>
             <p>
-              Minha formação é em Análise e Desenvolvimento de sistemas na
-              Universidade Estácio, sou uma pessoa apaixonado pelo
-              desenvolvimento de software e fascinado por novos desafios na área
-              TI, estou envolvido na área a 3 anos e sou do tipo de pessoa que
-              adora uma boa UX e UI agradáveis ao usuário.{" "}
+              Minha jornada de dev começa em 2018 quando comecei a estudar
+              Análise e Desenvolvimento de Sistemas na Faculdade Estácio,
+              durante o curso conheci diversas linguagens de programação e uma
+              delas era o javascript usado em páginas da web para tornar a
+              interface mais interativa, graças a esta apresentação Acabei
+              escolhendo a área de front-end para atuar.{" "}
             </p>
             <p>
-              Um desenvolvedor que visa promover a entregar produtos da melhor
-              qualidade. Alguém que acredita que perseverança, esforço e
+              Sou uma pessoa apaixonado pelo desenvolvimento de software e
+              fascinado por novos desafios na área TI, estou envolvido na área a
+              3 anos e sou do tipo de pessoa que adora uma boa UX e UI
+              agradáveis ao usuário.{" "}
+            </p>
+            <p>
+              Sou um desenvolvedor que visa promover a entregar produtos da
+              melhor qualidade. Alguém que acredita que perseverança, esforço e
               determinação levam aos melhores resultados. Estou sempre focado em
               provar as melhores práticas, fundamentos e consistência através do
               código.

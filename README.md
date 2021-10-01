@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy" src="././public/logo.svg" height="100px" />
+    <img alt="Proffy" src="././public/logo.png" height="100px" />
     <br>React Portfólio 2.0<br/>
      ReactJS | React-Router | Styled-components
 </h1>
@@ -18,7 +18,7 @@
 
 ## 💻 Projeto
 
-O projeto **React Portfólio 2.0** é um aplicação Web que consiste em um portfólio de serviços e foi desenvolvido para mostrar meus projetos e trabalhos como Desenvolvedor.
+O projeto **React Portfólio 2.0** é um aplicação Web que consiste em um portfólio de serviços e foi desenvolvido para mostrar meus projetos e trabalhos como Desenvolvedor Frontend.
 
 <h1 align="center">
     <img alt="Project image" title="Project image" src="./src/assets/images/projeto.svg" width="800px" />

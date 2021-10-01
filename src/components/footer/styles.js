@@ -2,17 +2,20 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   position: relative;
-  bottom: 0px;
-  height: 35px;
+  bottom: -0px;
+  height: 30px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 27px;
   span {
     font-size: 1em;
     font-weight: 400;
-    img {
-      width: 2vw;
-    }
+    padding-right: 4px;
+  }
+  img {
+    width: 3vw;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     span {
