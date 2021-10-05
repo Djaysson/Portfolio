@@ -3,6 +3,9 @@
     {
       "id": 1,
       "title": "Dstoreshoes",
+      "description": "O projeto consiste em uma ecommerce de vendas de tênis esportivos",
+      "tech": "JS - REACT - REDUX - STYLED_COMPONENTS",
+      "category": "loja",
       "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg1.png?alt=media&token=307df5e7-27b3-4952-bd04-2f5e694d74f5",
       "linkDemo": "https://dstoreshoes.netlify.app",
       "linkGithub": "https://github.com/Djaysson/Dstore_shoes"
@@ -10,6 +13,9 @@
     {
       "id": 2,
       "title": "Testes-covid",
+      "description": "O projeto se baseia em um site de informações sobre o status da covid e status de vacinado da covid no Brasil.",
+      "tech": "HTML - CSS - JS - REACT",
+      "category": "site",
       "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg2.png?alt=media&token=815e7ddc-bda4-4b9d-81ec-b6ef23eb28f6",
       "linkDemo": "https://testes-covid.netlify.app",
       "linkGithub": "https://github.com/Djaysson/Testes-covid"
@@ -17,6 +23,9 @@
     {
       "id": 3,
       "title": "Moveit-dev",
+      "description": "Moveit-dev é um App que utiliza a técnica de pomodoro, com o objetivo de melhorar sua produtividade e foco.",
+      "tech": "REACT - NEXTJS - TYPESCRIPT",
+      "category": "site",
       "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg3.png?alt=media&token=2f3e0548-7c8c-4526-b633-60a18f6e568a",
       "linkDemo": "https://moveit-devd.vercel.app",
       "linkGithub": "https://github.com/Djaysson/moveit-dev"
@@ -24,44 +33,43 @@
     {
       "id": 4,
       "title": "Convertmymoney",
+      "description": "O projeto Convertmymoney foi desenvolvido para converter $Dollar em R$Reais de acordo com sua cotação de venda do dollar atual do dia.",
+      "tech": "HTML - CSS - JS - EJS",
+      "category": "sistema",
       "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg4.png?alt=media&token=7dc61bd8-43d4-4751-9042-8c52bf188ffd",
       "linkDemo": "https://convertmymoney.vercel.app",
       "linkGithub": "https://github.com/Djaysson/ConvertMyMoney"
     },
     {
       "id": 5,
-      "title": "Jogo da Memoria",
-      "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg5.png?alt=media&token=1079e494-0b0b-4dd5-9590-f4a709a1bd61",
-      "linkDemo": "https://djaysson.github.io/Jogo-da-Memoria/",
-      "linkGithub": "https://github.com/Djaysson/Jogo-da-Memoria"
+      "title": "Churrascometro",
+      "description": "O projeto consiste em um churrascômetro que por sua vez realiza o calculo da quantidade de alimentos que devem ser levados para um churrasco com base na quantidade de pessoas e horas.",
+      "tech": "HTML - CSS - JS",
+      "category": "sistema",
+      "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg7.png?alt=media&token=2c106e60-4386-48f2-99ee-c4748e93f7ac",
+      "linkDemo": "https://djaysson.github.io/Churrascometro",
+      "linkGithub": "https://github.com/Djaysson/Churrascometro"
     },
+
     {
       "id": 6,
       "title": "Workshop",
+      "description": "O projeto é um site de captura de Email de possíveis clientes.",
+      "tech": "HTML - CSS - MAILCHIMP",
+      "category": "site",
       "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg6.png?alt=media&token=c97c0d65-9c0f-44f5-8ab7-f383a523d8b6",
       "linkDemo": "https://djaysson.github.io/workshop/",
       "linkGithub": "https://github.com/Djaysson/workshop"
     },
     {
       "id": 7,
-      "title": "Jogo da Memoria",
-      "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg5.png?alt=media&token=1079e494-0b0b-4dd5-9590-f4a709a1bd61",
-      "linkDemo": "https://djaysson.github.io/Jogo-da-Memoria/",
-      "linkGithub": "https://github.com/Djaysson/Jogo-da-Memoria"
-    },
-    {
-      "id": 8,
-      "title": "Workshop",
-      "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg6.png?alt=media&token=c97c0d65-9c0f-44f5-8ab7-f383a523d8b6",
-      "linkDemo": "https://djaysson.github.io/workshop/",
-      "linkGithub": "https://github.com/Djaysson/workshop"
-    },
-    {
-      "id": 9,
-      "title": "Convertmymoney",
-      "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg4.png?alt=media&token=7dc61bd8-43d4-4751-9042-8c52bf188ffd",
-      "linkDemo": "https://convertmymoney.vercel.app",
-      "linkGithub": "https://github.com/Djaysson/ConvertMyMoney"
+      "title": "Padlock",
+      "description": "O Padlock é uma APP feita para auxiliar os usuários na criaçao de uma senha mais segura.",
+      "tech": "JS - EXPO - REACT_NATIVE",
+      "category": "app",
+      "image": "https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/images%2Fimg8.png?alt=media&token=5c1c1be1-ed9a-41ee-819e-36216387b5a1",
+      "linkDemo": "https://github.com/Djaysson/padlock",
+      "linkGithub": "https://github.com/Djaysson/padlock"
     }
   ]
 }

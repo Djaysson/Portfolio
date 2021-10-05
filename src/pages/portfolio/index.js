@@ -10,18 +10,17 @@ import Loading from "../../components/loading/index";
 function Portfolio() {
   const [data, setData] = useState([]);
   const [load, setLoad] = useState(true);
+
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const fetchData = async () => {
-        const response = await api.get("/projetos");
-        const data = response.data;
-        setData(data);
-      };
-      fetchData();
+    const fetchData = async () => {
+      const response = await api.get("/projetos");
+      const data = response.data;
+      setData(data);
+    };
+    setTimeout(() => {
       setLoad(false);
     }, 2000);
-
-    return () => clearTimeout(timer);
+    fetchData();
   }, []);
 
   return (
@@ -39,12 +38,8 @@ function Portfolio() {
                 <div>
                   <div>
                     <strong>{projetos.title}</strong>
-                    <p>
-                      Lorem Ipsum é simplesmente uma simulação de texto da
-                      indústria tipográfica e de impressos.indústria tipográfica
-                      e de impressos.indústria tipográfica e de impressos.
-                    </p>
-                    <p>HTML - CSS - JS - REACT</p>
+                    <p>{projetos.description}</p>
+                    <p>{projetos.tech}</p>
                     <span>
                       <ContainerButtons>
                         <strong>

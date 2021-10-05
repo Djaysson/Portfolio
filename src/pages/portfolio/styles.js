@@ -22,12 +22,18 @@ export const ContainerImg = styled.section`
   grid-gap: 10px;
   margin-top: 120px;
   padding: 0 30px;
+
   article {
     margin: 10px auto;
     width: 24vw;
     height: 270px;
     z-index: 1;
     animation: animed 4s alternate infinite;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
     div {
       display: flex;
       flex-direction: column;
