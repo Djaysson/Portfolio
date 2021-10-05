@@ -40,7 +40,7 @@ function Header() {
             </li>
             <li onClick={handleOpenMenu}>
               <Links to="/sobre" activeStyle={{ color: "#4717F6" }}>
-                Sobre mim
+                Sobre
               </Links>
             </li>
             <li onClick={handleOpenMenu}>
@@ -50,7 +50,7 @@ function Header() {
             </li>
             <li onClick={handleOpenMenu}>
               <Links to="/portfolio" activeStyle={{ color: "#4717F6" }}>
-                Portfolio
+                Portfólio
               </Links>
             </li>
             <li onClick={handleOpenMenu}>

@@ -28,7 +28,7 @@ function Portfolio() {
       <AnimatedBackground />
       <Container>
         <HeaderLogo />
-        <TitlePage subtitle="Portfolio" title="Meus projetos" />
+        <TitlePage subtitle="Portfólio" title="Meus projetos" />
 
         {load && <Loading />}
         {!load && (

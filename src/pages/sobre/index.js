@@ -19,16 +19,16 @@ function Sobre() {
             </h1>
             <p>
               Minha jornada de dev começa em 2018 quando comecei a estudar
-              Análise e Desenvolvimento de Sistemas na Faculdade Estácio,
+              Análise e Desenvolvimento de Sistemas na faculdade Estácio,
               durante o curso conheci diversas linguagens de programação e uma
               delas era o javascript usado em páginas da web para tornar a
-              interface mais interativa, graças a esta apresentação Acabei
+              interface mais interativa, graças a esta apresentação acabei
               escolhendo a área de front-end para atuar.{" "}
             </p>
             <p>
               Sou uma pessoa apaixonado pelo desenvolvimento de software e
               fascinado por novos desafios na área TI, estou envolvido na área a
-              3 anos e sou do tipo de pessoa que adora uma boa UX e UI
+              3 anos e sou do tipo de pessoa que adora uma boa UI e UX
               agradáveis ao usuário.{" "}
             </p>
             <p>
