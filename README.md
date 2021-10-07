@@ -24,6 +24,12 @@ O projeto **React Portfólio 2.0** é um aplicação Web que consiste em um port
     <img alt="Project image" title="Project image" src="./src/assets/images/projeto.svg" width="800px" />
 </h1>
 
+ <p align="center">
+  <a href="https://djayson-portfolio.netlify.app" target="_blank">
+    <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1563043495/readme_logos/demo_on_netlify_bbuvjz.png">
+  </a>
+</p>
+
 ## 🚀 Tecnologias
 
 - [ReactJS](https://reactjs.org/)

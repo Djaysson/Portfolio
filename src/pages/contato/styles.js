@@ -394,6 +394,7 @@ export const Button = styled.input`
   font-weight: 500;
   background: ${(props) => props.theme.secondary};
   box-shadow: 0px 0px 15px ${(props) => props.theme.darkTransparent};
+  cursor: pointer;
   transition: transform 1s;
   &:hover {
     background: ${(props) => props.theme.primary};

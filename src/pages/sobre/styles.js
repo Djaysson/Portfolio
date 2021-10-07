@@ -218,7 +218,7 @@ export const Button = styled.a`
   align-items: center;
   justify-content: center;
   transition: transform 1s;
-
+  cursor: pointer;
   strong {
     width: 25vw;
     text-align: center;

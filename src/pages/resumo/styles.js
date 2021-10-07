@@ -233,6 +233,7 @@ export const Skills = styled.footer`
       background: ${(props) => props.theme.itemBackgroundColor};
       box-shadow: 0px 0px 15px ${(props) => props.theme.darkTransparent};
       border-radius: 15px;
+      cursor: pointer;
       width: 12vw;
       height: 60px;
       padding: 5px;
@@ -272,6 +273,7 @@ export const Skills = styled.footer`
       background: ${(props) => props.theme.itemBackgroundColor};
       box-shadow: 0px 0px 15px ${(props) => props.theme.darkTransparent};
       border-radius: 15px;
+      cursor: pointer;
       width: 12vw;
       height: 60px;
       padding: 5px;

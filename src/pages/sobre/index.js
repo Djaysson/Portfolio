@@ -58,7 +58,6 @@ function Sobre() {
                 Email:
                 <span>
                   <a href="mailto:djayson.dev@gmail.com">
-                    {" "}
                     djayson.dev@gmail.com
                   </a>
                 </span>
@@ -66,7 +65,7 @@ function Sobre() {
             </ul>
 
             <Button
-              href="https://drive.google.com/file/d/1BlQascd2UED4FeVPEJk88prpn4N84QpR/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Aya5zpfFXBl2vSfMfKuFUyyEcyMNCFvZ/view?usp=sharing"
               target="blank"
               rel="noopener noreferrer"
             >
