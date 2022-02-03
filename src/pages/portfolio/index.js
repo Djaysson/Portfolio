@@ -1,34 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import HeaderLogo from "../../components/headerLogo/index";
-import api from "../../server/api";
+
 import { Container, ContainerImg, ContainerButtons } from "./styles";
 import { FaLaptopCode, FaGithub } from "react-icons/fa";
 import TitlePage from "../../components/titlePage/index";
 import AnimatedBackground from "../../components/background/index";
 import Loading from "../../components/loading/index";
+import Button from "../../components/filterButton/index";
+import projetos from "../../server/data";
+
+const allButtons = ["Todos", ...new Set(projetos.map((item) => item.category))];
 
 function Portfolio() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(projetos);
   const [load, setLoad] = useState(true);
+  const [button, setButtons] = useState(allButtons);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await api.get("/projetos");
-      const data = response.data;
-      setData(data);
-    };
-    setTimeout(() => {
-      setLoad(false);
-    }, 2000);
-    fetchData();
-  }, []);
+  const filter = async (button) => {
+    if (button === "Todos") {
+      setData(projetos);
+      return;
+    }
+
+    const filteredData = await projetos.filter(
+      (item) => item.category === button
+    );
+    setData(filteredData);
+  };
+  setTimeout(() => {
+    setLoad(false);
+  }, 3000);
 
   return (
     <>
       <AnimatedBackground />
       <Container>
         <HeaderLogo />
-        <TitlePage subtitle="Portfólio" title="Meus projetos" />
+        <TitlePage subtitle="Portfolio" title="Meus projetos" />
+
+        <Button filter={filter} button={button} />
 
         {load && <Loading />}
         {!load && (

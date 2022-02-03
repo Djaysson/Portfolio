@@ -25,12 +25,7 @@ function Sobre() {
               interface mais interativa, graças a esta apresentação acabei
               escolhendo a área de front-end para atuar.{" "}
             </p>
-            <p>
-              Sou uma pessoa apaixonado pelo desenvolvimento de software e
-              fascinado por novos desafios na área TI, estou envolvido na área a
-              3 anos e sou do tipo de pessoa que adora uma boa UI e UX
-              agradáveis ao usuário.{" "}
-            </p>
+
             <p>
               Sou um desenvolvedor que visa promover a entregar produtos da
               melhor qualidade. Alguém que acredita que perseverança, esforço e
@@ -65,7 +60,7 @@ function Sobre() {
             </ul>
 
             <Button
-              href="https://drive.google.com/file/d/1Aya5zpfFXBl2vSfMfKuFUyyEcyMNCFvZ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VB3LdS_VjDh-VKvtGiP4lqSFoql3wyjg/view?usp=sharing"
               target="blank"
               rel="noopener noreferrer"
             >

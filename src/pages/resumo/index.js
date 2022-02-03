@@ -202,10 +202,6 @@ function Resumo() {
                 <FaCogs size={20} />
                 <span>Consumo de API</span>
               </li>
-              <li>
-                <SiWebpack size={20} />
-                <span>WebPack</span>
-              </li>
             </ul>
           </div>
         </Skills>
