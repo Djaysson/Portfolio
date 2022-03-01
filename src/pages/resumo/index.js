@@ -8,14 +8,9 @@ import TitlePage from "../../components/titlePage/index";
 import AnimatedBackground from "../../components/background/index";
 import TechCard from "../../components/techCard/index";
 import EducationCard from "../../components/educationCard/index";
-import {
-  SiRedux,
-  SiStyledComponents,
-  SiJquery,
-  SiSass,
-  SiNodeDotJs,
-} from "react-icons/si";
-import { VscCompareChanges, VscEditorLayout } from "react-icons/vsc";
+
+import { SiRedux, SiStyledcomponents, SiJquery, SiSass } from "react-icons/si";
+import { VscEditorLayout } from "react-icons/vsc";
 import { RiLayoutMasonryFill } from "react-icons/ri";
 
 import {
@@ -32,9 +27,8 @@ import {
   FaMicrophone,
   FaLightbulb,
   FaBrain,
-  FaBalanceScale,
-  FaUsersCog,
   FaCogs,
+  FaNodeJs,
 } from "react-icons/fa";
 
 function Resumo() {
@@ -108,9 +102,6 @@ function Resumo() {
               <TechCard icon={<FaHeart />} tech="Paixão por aprender" />
               <TechCard icon={<FaTools />} tech="Persistência" />
               <TechCard icon={<FaBrain />} tech="Criatividade" />
-              <TechCard icon={<FaBalanceScale />} tech="Ética" />
-              <TechCard icon={<FaUsersCog />} tech="Flexibilidade" />
-              <TechCard icon={<VscCompareChanges />} tech="Resiliência" />
             </ul>
           </div>
           <div>
@@ -123,15 +114,15 @@ function Resumo() {
               <TechCard icon={<FaReact />} tech="React" />
               <TechCard icon={<SiRedux />} tech="Redux" />
               <TechCard icon={<FaGitSquare />} tech="Git" />
-              <TechCard icon={<SiNodeDotJs />} tech="Noções de node" />
+              <TechCard icon={<FaNodeJs />} tech="Noções de node" />
               <TechCard
-                icon={<SiStyledComponents />}
+                icon={<SiStyledcomponents />}
                 tech="Styled-components"
               />
               <TechCard icon={<SiJquery />} tech="Jquery" />
               <TechCard icon={<SiSass />} tech="Sass" />
               <TechCard icon={<RiLayoutMasonryFill />} tech="Noções de UX/UI" />
-              <TechCard icon={<VscEditorLayout />} tech="Layouts responsivos" />
+              <TechCard icon={<VscEditorLayout />} tech="Layouts responsivo" />
               <TechCard icon={<FaCogs />} tech="Consumo de API" />
             </ul>
           </div>
