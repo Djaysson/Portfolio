@@ -6,13 +6,13 @@ import LogoFreeCode from "../../assets/logos/free.png";
 import LogoDigital from "../../assets/logos/digital.png";
 import TitlePage from "../../components/titlePage/index";
 import AnimatedBackground from "../../components/background/index";
+import TechCard from "../../components/techCard/index";
+import EducationCard from "../../components/educationCard/index";
 import {
   SiRedux,
   SiStyledComponents,
   SiJquery,
   SiSass,
-  SiMaterialUi,
-  SiWebpack,
   SiNodeDotJs,
 } from "react-icons/si";
 import { VscCompareChanges, VscEditorLayout } from "react-icons/vsc";
@@ -47,161 +47,92 @@ function Resumo() {
         <Section>
           <h1>Minha Educação</h1>
           <div>
-            <div>
-              <span>2018 - 2020</span>
-              <p>Análise e Desenvolvimento de Sistemas</p>
-              <p>Universidade Estácio</p>
-              <a
-                href="https://estacio.br/cursos/graduacao/analise-e-desenvolvimento-de-sistemas"
-                target="blank"
-              >
-                <img src={LogoEstacio} alt="Logo Estácio" />{" "}
-              </a>
-            </div>
-            <div>
-              <span>2020 - 2021</span>
-              <p>JavaScript Algorithms and Data Structures</p>
-              <p>FreeCodeCamp</p>
-              <a
-                href="https://www.freecodecamp.org/certification/fcc07f30d36-40e3-46b4-a612-b085a50d2773/javascript-algorithms-and-data-structures"
-                target="blank"
-              >
-                <img src={LogoFreeCode} alt="Logo Estácio" />{" "}
-              </a>
-            </div>
-            <div>
-              <span>2020 - 2021</span>
-              <p>Bootcamp Become Remote</p>
-              <p>Digital Innovation One</p>
-              <a
-                href="https://certificates.digitalinnovation.one/6CF589DE"
-                target="blank"
-              >
-                <img src={LogoDigital} alt="Logo Estácio" />{" "}
-              </a>
-            </div>
-            <div>
-              <span>2020 - 2021</span>
-              <p>Responsive Web Design</p>
-              <p>FreeCodeCamp</p>
-              <a
-                href="https://www.freecodecamp.org/certification/fcc07f30d36-40e3-46b4-a612-b085a50d2773/responsive-web-design"
-                target="blank"
-              >
-                <img src={LogoFreeCode} alt="Logo Estácio" />{" "}
-              </a>
-            </div>
+            <EducationCard
+              date="2018 - 2020"
+              course="Análise e Desenvolvimento de Sistemas"
+              entity="Universidade Estácio"
+              link="https://estacio.br/cursos/graduacao/analise-e-desenvolvimento-de-sistemas"
+              image={LogoEstacio}
+              description="Logo Estácio"
+            />
+            <EducationCard
+              date="2021 - 2022"
+              course="Bootcamp Inter Frontend Developer"
+              entity="Digital Innovation One"
+              link="https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/certificado%2F0D2434AE.pdf?alt=media&token=2ab0c4ff-c1b1-4d37-b7a6-2cf4b037fcc2"
+              image={LogoDigital}
+              description="Logo Digital Innovation One"
+            />
+            <EducationCard
+              date="2020 - 2021"
+              course="JavaScript Algorithms and Data Structures"
+              entity="FreeCodeCamp"
+              link="https://www.freecodecamp.org/certification/fcc07f30d36-40e3-46b4-a612-b085a50d2773/javascript-algorithms-and-data-structures"
+              image={LogoFreeCode}
+              description="Logo FreeCodeCamp"
+            />
+            <EducationCard
+              date="2020 - 2021"
+              course="Bootcamp Become Remote"
+              entity="Digital Innovation One"
+              link="https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/certificado%2F6CF589DE.pdf?alt=media&token=030fc92a-86dc-46b1-9dac-1481b2f2bb66"
+              image={LogoDigital}
+              description="Logo Digital Innovation One"
+            />
+            <EducationCard
+              date="2020 - 2021"
+              course="Responsive Web Design"
+              entity="FreeCodeCamp"
+              link="https://www.freecodecamp.org/certification/fcc07f30d36-40e3-46b4-a612-b085a50d2773/responsive-web-design"
+              image={LogoFreeCode}
+              description="Logo FreeCodeCamp"
+            />
+            <EducationCard
+              date="2021 - 2022"
+              course="Projetos ágeis com SCRUM"
+              entity="Digital Innovation One"
+              link="https://firebasestorage.googleapis.com/v0/b/portifolio-af8ac.appspot.com/o/certificado%2F4C25BFBF.pdf?alt=media&token=111f32e6-9e24-43fe-9499-b5db277a3afe"
+              image={LogoDigital}
+              description="Logo Digital Innovation One"
+            />
           </div>
         </Section>
         <Skills>
           <div>
             <h1>Soft Skills</h1>
             <ul>
-              <li>
-                <FaUserAlt size={20} />
-                <span>Foco no cliente</span>
-              </li>
-              <li>
-                <FaHandshake size={20} />
-                <span>Trabalho em Equipe</span>
-              </li>
-              <li>
-                <FaMicrophone size={20} />
-                <span>Comunicação</span>
-              </li>
-              <li>
-                <FaLightbulb size={20} />
-                <span>Problem-solving</span>
-              </li>
-              <li>
-                <FaHeart size={20} />
-                <span>Paixão por aprender</span>
-              </li>
-              <li>
-                <FaTools size={20} />
-                <span>Persistência</span>
-              </li>
-              <li>
-                <FaBrain size={20} />
-                <span>Criatividade</span>
-              </li>
-              <li>
-                <FaBalanceScale size={20} />
-                <span>Ética</span>
-              </li>
-              <li>
-                <FaUsersCog size={20} />
-                <span>Flexibilidade</span>
-              </li>
-              <li>
-                <VscCompareChanges size={20} />
-                <span>Resiliência</span>
-              </li>
+              <TechCard icon={<FaUserAlt />} tech="Foco no cliente" />
+              <TechCard icon={<FaHandshake />} tech="Trabalho em Equipe" />
+              <TechCard icon={<FaMicrophone />} tech="Comunicação" />
+              <TechCard icon={<FaLightbulb />} tech="Problem-solving" />
+              <TechCard icon={<FaHeart />} tech="Paixão por aprender" />
+              <TechCard icon={<FaTools />} tech="Persistência" />
+              <TechCard icon={<FaBrain />} tech="Criatividade" />
+              <TechCard icon={<FaBalanceScale />} tech="Ética" />
+              <TechCard icon={<FaUsersCog />} tech="Flexibilidade" />
+              <TechCard icon={<VscCompareChanges />} tech="Resiliência" />
             </ul>
           </div>
           <div>
             <h1>Hard Skills</h1>
             <ul>
-              <li>
-                <FaHtml5 size={20} />
-                <span>Html</span>
-              </li>
-              <li>
-                <FaCss3Alt size={20} />
-                <span>Css</span>
-              </li>
-              <li>
-                <FaJsSquare size={20} />
-                <span>Javascript</span>
-              </li>
-              <li>
-                <FaBootstrap size={20} />
-                <span>Bootstrap</span>
-              </li>
-              <li>
-                <FaReact size={20} />
-                <span>React</span>
-              </li>
-              <li>
-                <SiRedux size={20} />
-                <span>Redux</span>
-              </li>
-              <li>
-                <FaGitSquare size={20} />
-                <span>Git</span>
-              </li>
-              <li>
-                <SiNodeDotJs size={20} />
-                <span>Noções de node</span>
-              </li>
-              <li>
-                <SiStyledComponents size={20} />
-                <span>Styled-components</span>
-              </li>
-              <li>
-                <SiJquery size={20} />
-                <span>Jquery</span>
-              </li>
-              <li>
-                <SiSass size={20} />
-                <span>Sass</span>
-              </li>
-              <li>
-                <RiLayoutMasonryFill size={20} />
-                <span>Noções de UX/UI</span>
-              </li>
-              <li>
-                <VscEditorLayout size={20} />
-                <span>Layouts responsivos</span>
-              </li>
-              <li>
-                <SiMaterialUi size={20} />
-                <span>Material-UI</span>
-              </li>
-              <li>
-                <FaCogs size={20} />
-                <span>Consumo de API</span>
-              </li>
+              <TechCard icon={<FaHtml5 />} tech="Html" />
+              <TechCard icon={<FaCss3Alt />} tech="Css" />
+              <TechCard icon={<FaJsSquare />} tech="Javascript" />
+              <TechCard icon={<FaBootstrap />} tech="Bootstrap" />
+              <TechCard icon={<FaReact />} tech="React" />
+              <TechCard icon={<SiRedux />} tech="Redux" />
+              <TechCard icon={<FaGitSquare />} tech="Git" />
+              <TechCard icon={<SiNodeDotJs />} tech="Noções de node" />
+              <TechCard
+                icon={<SiStyledComponents />}
+                tech="Styled-components"
+              />
+              <TechCard icon={<SiJquery />} tech="Jquery" />
+              <TechCard icon={<SiSass />} tech="Sass" />
+              <TechCard icon={<RiLayoutMasonryFill />} tech="Noções de UX/UI" />
+              <TechCard icon={<VscEditorLayout />} tech="Layouts responsivos" />
+              <TechCard icon={<FaCogs />} tech="Consumo de API" />
             </ul>
           </div>
         </Skills>
