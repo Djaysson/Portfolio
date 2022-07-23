@@ -51,7 +51,7 @@ O projeto **React Portfólio 2.0** é um aplicação Web que consiste em um port
 1. Faça um clone do repositório:
 
 ```sh
-  $ git clone https://github.com/Djaysson/React-Portfolio-2.0.git
+  $ git clone https://github.com/Djaysson/Portfolio.git
 ```
 
 2. Executando a Aplicação:
