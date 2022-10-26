@@ -1,6 +1,6 @@
 <h1 align="center">
     <img alt="Proffy" src="././public/logo.png" height="100px" />
-    <br>React Portfólio 2.0<br/>
+    <br>Portfólio_v1<br/>
      ReactJS | React-Router | Styled-components
 </h1>
 
@@ -18,17 +18,13 @@
 
 ## 💻 Projeto
 
-O projeto **React Portfólio 2.0** é um aplicação Web que consiste em um portfólio de serviços e foi desenvolvido para mostrar meus projetos e trabalhos como Desenvolvedor Frontend.
+O projeto **Portfólio_v1** é um aplicação Web que consiste em um portfólio de serviços e foi desenvolvido para mostrar meus projetos e trabalhos como Desenvolvedor Frontend.
 
 <h1 align="center">
     <img alt="Project image" title="Project image" src="./src/assets/images/projeto.svg" width="800px" />
 </h1>
 
- <p align="center">
-  <a href="https://djaysonrodrigues.tk" target="_blank">
-    <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1563043495/readme_logos/demo_on_netlify_bbuvjz.png">
-  </a>
-</p>
+
 
 ## 🚀 Tecnologias
 
@@ -51,14 +47,14 @@ O projeto **React Portfólio 2.0** é um aplicação Web que consiste em um port
 1. Faça um clone do repositório:
 
 ```sh
-  $ git clone https://github.com/Djaysson/Portfolio.git
+  $ git clone https://github.com/Djaysson/Portfolio_v1.git
 ```
 
 2. Executando a Aplicação:
 
 ```sh
   # Vá para o repositório
-  $ cd React-Portfolio-2.0
+  $ cd Portfólio_v1
 
   # Instalando as dependências do projeto.
   $ yarn install # ou npm install
